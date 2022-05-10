@@ -1,3 +1,12 @@
 .lista-gatos{
     color: brown;
 }
+.bordes-redondeados{
+    border-radius: 50%;
+}
+div{
+    background-color:silver;
+}
+#comida{
+    background-color: yellow;
+}
