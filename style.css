@@ -4,3 +4,7 @@ h2{
 p{
     color: purple;
 }
+img{
+    max-width: 100%;
+    height: auto;
+}
