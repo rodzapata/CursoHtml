@@ -17,18 +17,68 @@
 </head>
 
 <body>
-  <h2>Identificamo el tipo de documento HTL5 para que los navegadores los reconozcan como html5</h2>
-  <h3>
-    <!DOCTYPE html>
-  </h3>
-  <p>La pagina donde podemos encontrar la documentacion oficial es MDN Web Docs</p>
-  <p>Tambien la pagina HtmlReference</p>
+  <h1>Curso Html 5 </h1>
+  <h2>indice de contenido</h2>
+  <!--ui>li*18>a Metodo abreviado-->
+  <ui>
+    <li><a href="curso_html.html#referencia">Referencias</a></li>
+    <li><a href="#etiqueta-doctype">Etiqueta Doctype</a></li>
+    <li><a href="#etiqueta-head">Etiquetas de encabezado Head</a></li>
+    <li><a href="#etiqueta-meta">Etiquetas meta</a></li>
+    <li><a href="#etiqueta-titulo">Etiquetas titulos</a></li>
+    <li><a href="#parrafos-formato">Parrafos formato</a></li>
+    <li><a href="#parrafos-semantico">Parrafos semanticos</a></li>
+    <li><a href="#etiqueta-salto">Etiquetas de salto</a></li>
+    <li><a href="#etiqueta-pre-formateo">Etiquetas pre formateo</a></li>
+    <li><a href="#etiquetas-semantica-estructurales">Etiquetas semantica estructurales</a></li>
+    <li><a href="#etiquetas-bloqueso-vs-linea">Etiquetas de bloqueo vs Etiquetas de linea</a></li>
+    <li><a href="#estilos"></a>Estilos CSS dentro de un Archivo html</li>
+    <li><a href="#imagens-y-vectores">Imagenes y vectores SVG</a></li>
+    <li><a href="#etiqueta-figure">Etiqueta Figure</a></li>
+    <li><a href="#etiquetas-cuerpo">Etiquetas del Cuerpo Body</a></li>
+    <li><a href="#comentarios">Comentarios en Html</a></li>
+    <li><a href="#etiquetas-cuerpo-main">Etiqueta &lt;main&gt;</a></li>
+    <li><a href="#enlaces">Enlaces internos, externo y con imagenes</a></li>
+    <li><a href="#listas">Listas</a></li>
+    <li><a href="#listas-no-ordenda">Listas no ordenadas</a></li>
+    <li><a href="#listas-ordenadas">Listas ordenadas</a></li>
+    <li><a href="#tablas">Tablas</a></li>
+    <li><a href="#formularios">Formularios</a></li>
+     
+  </ui>
+  
+  <h2 id="referencia">Pagina de Referencias</h2>
+  <p>La pagina donde podemos encontrar la documentacion oficial es
+    <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">MDN Web Docs</a><br>
+    Tambien la pagina <a href="https://htmlreference.io/" target="_blank">HtmlReference</a><br>
+    <a href="https://youtu.be/-oK6zL01fNM">Jhonatan mircha</a>
+    curso de Html y CSS por Jhonatan mircha <br>
+    Tambien el curso de deichoi <a href="https://www.youtube.com/watch?v=Y-OhzQpsRwI">HTL5 Y CCS desde cero</a>
+  </p>
+  <hr>
 
-  <h1>Principales Etiquetas en el HTMl</h1>
-  <h2>Etiqueta de Html</h2>
-  <p>Html lang="es"></p>
-  <p>colocamos el idioma en que está el contenido de la pagina web</p>
-  <p>el atributo <strong>viewport</strong> nos muestra la region visible que se muestra por pantalla, cuando el
+  <h2 id="etiqueta-doctype">Principales Etiquetas en el HTMl</h2>
+  <h3>etiqueta &lt;!DOCTYPE html&gt;</h3>
+  <p>
+    Especifica el tipo de documento que es HTML5
+  </p>
+  <h3>etiqueta &lt;html lang="es"&gt;</h3>
+  <p>
+    colocamos el idioma en que está el contenido de la pagina web
+  </p>
+
+  <hr>
+  <h2 id="etiqueta-head">Etiqueta de de Ecabezado Head</h2>
+  <p>
+    En esta etiqueta incluimos las etiquetas meta, el título y enlaces a scripts y hojas de estilos, etc.
+  </p>
+  <h2 id="etiqueta-meta">Etiqueta &lt;meta&gt;</h2>
+  <p>
+    <b>meta</b> de "metainformation" - metainformación. Sirve para aportar información sobre el documento<br>
+    &lt;meta&gt; charset="UTF-8"&gt; Especifica el tipo de caracter por ejemplos tildes y ñ del español
+  </p>
+
+  <p>el atributo <b>viewport</b> nos muestra la region visible que se muestra por pantalla, cuando el
     usuario hace Zoom </p>
   <p>En este caso el hancho de la pantalla tomas el hancho del dispositivo y la escala inicial el 1.0, osea 100%</p>
   <p>si en el navegador le damos impeccionar y despues escogemos el enlace toggle device toolbar, podremos escoger
@@ -37,28 +87,31 @@
     gracias al
     <strong>Viewport</strong>
   </p>
+
+  <hr>
+  <h2 id="etiqueta-titulo">Etiquetas Titulos &lt;Title&gt;</h2>
   <p>se recomiendad que las el contenido de la del <strong>Titulo</strong> como el de la <strong>Description</strong>
   </p>
   <p>Debe ser lo mas clara y consisa posible, porque esto ayuda el posicionmamiento de nuestra pagina</p>
   <p>Ademas se aconseja que cada seccion de la pagina tenga su propio titulo y descripcion y no dejar los mismos para
     todas la pagina</p>
   <hr>
-  <h2>Etiqueta de ecabezado Head</h2>
-  <p>En esta etiqueta incluimos el título y enlaces a scripts y hojas de estilos.</p>
-  <p>Nuestra pagina web se recomienta que solo debe tener un titulo <strong>H1</strong> que es el principal</p>
-  <p>ylas secciones pueden tener todos los H2, H3, H4, que quieras, esto porque para el posicionamiento es importantes
+  <h2>Encabezados H1, H2, H3, H4, H5, H6</h2>
+  <p>Nuestra pagina web se recomienta que solo debe tener un titulo <b>H1</b> que es el principal</p>
+  <p>y las secciones pueden tener todos los H2, H3, H4, que quieras, esto porque para el posicionamiento es importantes
   </p>
-  <p>que la Araño mundial solo busque un solo título</p>
+  <p>que la Araña mundial solo busque un solo título</p>
 
   <hr>
-  <h2>Etiqueta de Parrafos Formato</h2>
+  <h2 id="parrafos-formato">Etiqueta de Parrafos Formato</h2>
   <p>
     palabra en <b>negrita</b> en <i>itálica</i> palabra <u>subrayada</u>
     la formula E=m<sup>2</sup> y el agua es H<sub>2</sub>O
     <mark>Marca registrada: </mark><small>Letra pequeña</small>
+    Texto tachado (Strikethrough) <b>s</b>, como por ejemplo <s>esto es texto tachado</s> 
   </p>
   <hr>
-  <h2>Etiqueta de Parrafos semántica</h2>
+  <h2 id="parrafos-semantico">Etiqueta de Parrafos semántica</h2>
   <p>
     ahora vamos a descubrir etiquetas de parrafos, pero que tienen un significado para el navegador.
     <b>Strong</b>, esta etiqueta es parecido a la Negrita, pero le dice al navegador que el contenido de la
@@ -76,19 +129,26 @@
   la etiqueta <b>Cite</b>, es el nombre de la marca, o quien dijo la frase.
   </p>
   <hr>
-  <h2>Etiqueta de salto</h2>
+  <h2 id="etiqueta-salto">Etiqueta de salto <b>br (Break Rule) salto de linea y Hr (Horizontal Rule) linea horizontal</b></h2>
   <p>
     Estas etiquetas son <b>br</b>, esta genera un salto de linea es como si presionaramo un ENTER, por ejemlo:
     Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Accusamus consequatur repellat atque neque
     sint excepturi voluptatum aliquam quas maiores repellendus dolorem accusantium aperiam tenetur fugiat fugit,
-    distinctio itaque cumque nisi.
+    distinctio itaque cumque nisi.<br>
+
+    en html5 no debe usarse br, puede remplazarlo con <b>Clear</b> de CSS
+
+  </p>
+
+  <p>
+    (Horizontal Rule)
     etiqueta <b>Hr</b> nos permite representa un cambio de tema entre párrafos
-    (por ejemplo, un cambio de escena en una historia, un cambio de tema en una sección).
+    (por ejemplo, un cambio de escena en una historia, un cambio de tema en una sección).<br> 
     En versiones previas de HTML representaba una línea horizontal.
   </p>
 
   <hr>
-  <h2>Etiquetas pre Formateo</h2>
+  <h2 id="etiqueta-pre-formateo">Etiquetas pre Formateo</h2>
   <p>
     si uttilizamos la etiqueta <b>Pre</b> el navegador respetará los los tabularores y salto de pagina
     que se realicen de manera manual.
@@ -110,7 +170,7 @@
         </pre>
   </p>
   <hr>
-  <h2>Etiquetas semanticas estructurales</h2>
+  <h2 id="etiquetas-semantica-estructurales">Etiquetas semanticas estructurales</h2>
   <p>
     Estas etiqueta son las de marquetado y tienen un significado semantico para el navegador.<br>
     llegaron para remplazar las <b>Div</b> que es una etiqueta contenedora pero que no tenian <br>
@@ -128,7 +188,7 @@
     por ejemplo Kra 5B No. 56C-93 Barrio valentina. o para contactar al autor ...<br>
   </p>
   <hr>
-  <h2>Etquetas de Bloques Vs Etiquetas de linea</h2>
+  <h2 id="etiquetas-bloqueso-vs-linea">Etquetas de Bloques Vs Etiquetas de linea</h2>
   <p>
     Las etiqueta de blosques son las ocupan todo el espacio de ancho disponible, no permitiendo tener una otra
     etiqueta al lado,
@@ -145,7 +205,7 @@
 
   </p>
   <hr>
-  <h2>Estilos CSS dentro del archivo Html </h2>
+  <h2 id="estilos">Estilos CSS dentro del archivo Html </h2>
   <p>
     Existen tres formas de trabajar los estilos en Html.<br>
     1. utilizando el atributo <b>style</b>, como en el ejemplo anterior.<br>
@@ -154,12 +214,15 @@
 
   </p>
   <hr>
-  <h2>Imagenes en Html, usando imagen y vectores SVG</h2>
+  <h2 id="imagens-y-vectores">Imagenes en Html, usando imagen y vectores SVG</h2>
   <p>
     las imagenes se utilizan la etiqueta <b>img</b>, y se acostubra en el archivo idependiente de JavaScrip, <br>
     manipular el tamaño de la imagen como se mustra en el siguiente ejemplo.<br>
     &lt;img src="" alt="Imagen del zorro"&gt;
-    y dentro del archivo <b>Style.css</b> iria:
+  <p>si el navegador por algun motivo no nos muestra la imagen, entoces por lo menos</p>
+  <p>podemos ver el mensaje que colocamos en alt</p>
+
+  y dentro del archivo <b>Style.css</b> iria:
   <pre>
             <code>
                 img{
@@ -169,8 +232,9 @@
             </code>
         </pre>
   </p>
+
   <hr>
-  <h2>Etiqueta Figure</h2>
+  <h2 id="etiqueta-figure">Etiqueta Figure</h2>
   <p>
     <b>&lt;Figure&gt;</b>, por lo general hace referencia a una imagen, diagrama, ilustracion o un fragmento de
     codigo, <br>
@@ -180,28 +244,29 @@
     <figcaption>Tabla periodica Fig 1.2</figcaption>
   </figure>
   </p>
-  <hr>
-  <h2>Etiqueta del cuerpo Body</h2>
 
-  <h2>Comentarios en Html</h2>
+  <hr>
+  <h2 id="etiquetas-cuerpo">Etiqueta del cuerpo Body</h2>
+
+  <h2 id="comentarios">Comentarios en Html</h2>
   <p>Los comentarios se colocan con la etiqueta
-    <!--Comentario  -->
+  <pre>
+      &lt;!--Comentario  --&gt;
+    </pre>
   </p>
 
-  <h2>Elemento Main</h2>
+  <h2 id="etiquetas-cuerpo-main">Elemento Main</h2>
   <p>
-  <main></main>
+    etiqueta <b>&lt;main&gt; /&lt;main&gt;</b> representa el contenido principal del <b>&lt;body&gt;</b> de un documento
+
   </p>
-  <hr>
-  <h2>Imagenes</h2>
-  <p>Etiqueta Img scr="url de origen" alt="alternativa mensaje"</p>
-  <p>si el navegador por algun motivo no nos muestra la imagen, entoces por lo menos</p>
-  <p>podemos ver el mensaje que colocamos en alt</p>
 
   <hr>
-  <h2>Crear enlaces externos</h2>
+  <h2 id="enlaces">Crear enlaces externos</h2>
   <p>entiqueta <b>&lt;a&gt;</b> abreviatura de la palabra <b>Anchor</b> </p>
-  <p>sintaxis <b>&lt;a</b> href="url del enlace" targe="_blank" &gt; rel="noopener noreferrer nofollow" <b>&lt;/a&gt;</b></p>
+  <p>sintaxis <b>&lt;a</b> href="url del enlace" targe="_blank" &gt; rel="noopener noreferrer nofollow"
+    <b>&lt;/a&gt;</b>
+  </p>
   <h3>Ejemplo de enlace</h3>
   <a href="hola.html" rel="noopener noreferrer">Enlace a la pagina hola.html</a>
 
@@ -212,12 +277,15 @@
   <p>podemos crear varios parrafos y colocarles nombre con el elemento Id="Nombre"</p>
 
   <p>Las imagenes tambien se pueden pueden utilizar como enlaces, por ejemplo</p>
-  <a href="hola.html" target="_blank"> 
+  <a href="hola.html" target="_blank">
     <img src="imagenes/gatos.jpg" alt="Enlace que envia a la pagina hola" width="80" height="40">
   </a>
   <hr>
-  <h2>Listas </h2>
-  <h3>Lista no ordenada (Unordered List) ul</h3>
+  <h2 id="listas">Listas </h2>
+  <p>
+    Existe tres tipos de listas: listas no ordenada, listas ordenadas y listas de contenido o descripcion
+  </p>
+  <h2 id="listas-no-ordenda">Lista no ordenada (Unordered List) ul</h2>
   <p>Se utiliza para una lista desordenada, cada item se separan con li </p>
   <h3>Ejemplos de Estaciones del año</h3>
   <ul>
@@ -227,7 +295,7 @@
     <li>Primavera</li>
   </ul>
   <hr>
-  <h3>Lista ordenada (ordered List) ol</h3>
+  <h2 id="listas-ordenadas">Lista ordenada (ordered List) ol</h2>
   <p>Se utiliza para una lista ordenada, cada item se separan con li </p>
   <h3>Entaciones del año ordenada</h3>
   <ol>
@@ -268,7 +336,7 @@
   </dl>
 
   <hr>
-  <h2>Tablas</h2>
+  <h2 id="tablas">Tablas</h2>
   <table>
     <thead>
       <tr>
@@ -320,9 +388,7 @@
   </table>
 
   <hr>
-  <h3>Texto tachado (Strikethrough) s</h3>
-  <h3>Linea horizontal (Horizontal Rule) hr</h3>
-  <hr>
+  <h2 id="formularios">Formularios Web en html</h2>
   <div>
     <h2>Creacion de formularios form</h2>
     <h3>Caja de texto</h3>
