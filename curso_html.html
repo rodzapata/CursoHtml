@@ -197,14 +197,24 @@
   <p>Etiqueta Img scr="url de origen" alt="alternativa mensaje"</p>
   <p>si el navegador por algun motivo no nos muestra la imagen, entoces por lo menos</p>
   <p>podemos ver el mensaje que colocamos en alt</p>
+
   <hr>
   <h2>Crear enlaces externos</h2>
-  <p>entiqueta a abreviatura de la palabra Anchor </p>
-  <p>sintexis a href="url del enlace" targe="_blank" rel="noopener noreferrer"</p>
+  <p>entiqueta <b>&lt;a&gt;</b> abreviatura de la palabra <b>Anchor</b> </p>
+  <p>sintaxis <b>&lt;a</b> href="url del enlace" targe="_blank" &gt; rel="noopener noreferrer nofollow" <b>&lt;/a&gt;</b></p>
+  <h3>Ejemplo de enlace</h3>
+  <a href="hola.html" rel="noopener noreferrer">Enlace a la pagina hola.html</a>
+
   <p>Se pueden crear enlaces internos colocando el simbolo #Nombre</p>
   <p>El elemnto Targe="" es para que el link se habra en una pestaña nueva</p>
   <p>el elemento rel="" es por seguridad</p>
+  <p>el parametro <b>nofollow</b> para que no salga el mensaje de avertencia que esta saliendo a un enlace externo</p>
   <p>podemos crear varios parrafos y colocarles nombre con el elemento Id="Nombre"</p>
+
+  <p>Las imagenes tambien se pueden pueden utilizar como enlaces, por ejemplo</p>
+  <a href="hola.html" target="_blank"> 
+    <img src="imagenes/gatos.jpg" alt="Enlace que envia a la pagina hola" width="80" height="40">
+  </a>
   <hr>
   <h2>Listas </h2>
   <h3>Lista no ordenada (Unordered List) ul</h3>
@@ -287,7 +297,7 @@
       <tr>
         <td>Shaina</td>
         <td>Oficio</td>
-      </tr> 
+      </tr>
 
       <tr>
         <td>Saga</td>
