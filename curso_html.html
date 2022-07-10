@@ -20,8 +20,11 @@
   <h1>Curso Html 5 </h1>
   <h2>indice de contenido</h2>
   <!--ui>li*18>a Metodo abreviado-->
+
+
   <ui>
     <li><a href="curso_html.html#referencia">Referencias</a></li>
+    <li><a href="#metodo-abreviado-code">Metodo abreviado en Code Studio </a></li>
     <li><a href="#etiqueta-doctype">Etiqueta Doctype</a></li>
     <li><a href="#etiqueta-head">Etiquetas de encabezado Head</a></li>
     <li><a href="#etiqueta-meta">Etiquetas meta</a></li>
@@ -32,7 +35,7 @@
     <li><a href="#etiqueta-pre-formateo">Etiquetas pre formateo</a></li>
     <li><a href="#etiquetas-semantica-estructurales">Etiquetas semantica estructurales</a></li>
     <li><a href="#etiquetas-bloqueso-vs-linea">Etiquetas de bloqueo vs Etiquetas de linea</a></li>
-    <li><a href="#estilos"></a>Estilos CSS dentro de un Archivo html</li>
+    <li><a href="#estilos">Estilos CSS dentro de un Archivo html</a></li>
     <li><a href="#imagens-y-vectores">Imagenes y vectores SVG</a></li>
     <li><a href="#etiqueta-figure">Etiqueta Figure</a></li>
     <li><a href="#etiquetas-cuerpo">Etiquetas del Cuerpo Body</a></li>
@@ -44,6 +47,7 @@
     <li><a href="#listas-ordenadas">Listas ordenadas</a></li>
     <li><a href="#tablas">Tablas</a></li>
     <li><a href="#formularios">Formularios</a></li>
+    <li><a href="#formularios-cajas-textos">Cajas de textos</a></li>
      
   </ui>
   
@@ -53,10 +57,18 @@
     Tambien la pagina <a href="https://htmlreference.io/" target="_blank">HtmlReference</a><br>
     <a href="https://youtu.be/-oK6zL01fNM">Jhonatan mircha</a>
     curso de Html y CSS por Jhonatan mircha <br>
-    Tambien el curso de deichoi <a href="https://www.youtube.com/watch?v=Y-OhzQpsRwI">HTL5 Y CCS desde cero</a>
+    Tambien el curso de deichoi <a href="https://www.youtube.com/watch?v=Y-OhzQpsRwI">HTL5 Y CCS desde cero</a><br>
+    Aprende HTML ahora! curso completo GRATIS desde cero por Nicolas Shulman <a href="https://youtu.be/MJkdaVFHrto">Html</a><br>
   </p>
   <hr>
+  <h2 id="metodo-abreviado-code"></h2>
+  <p>
+    los siguienes son metodo abreviado de Code studio <br>
+    Ctrl + } Coloca una linea o bloque en comentarios <br>
+    ! + Tab crea la estructura base de un documento html 5 <br>
 
+  </p>
+  <hr>
   <h2 id="etiqueta-doctype">Principales Etiquetas en el HTMl</h2>
   <h3>etiqueta &lt;!DOCTYPE html&gt;</h3>
   <p>
@@ -194,11 +206,17 @@
     etiqueta al lado,
     la etiqueta de bloque por excelencia es <b>Div</b>.<br>
     en cambios las de linea si permite tener otras etiquetas al lado, la mas famosa es la etiqueta <b>Span</b><br>
-    <3>Ejemplos</3>
+    esta etiqueta sirve para aplicar estilo a un texto o agrupar elementos en linea.<br>
+    <h3>Ejemplos</h3>
   <div style="background-color: yellow">Este es una prueba con Div</div>
   <div>Este es otro Div </div>
   <span style="background-color:yellow">Esta es una prueba con Span</span>
   <span>Esta es otra span</span>
+    <h3>Ejemplo dentro de un <b>span</b> dentro de un parrafo</h3>
+    <p>
+      En este texto queeremos resaltar la palabra <span style="color:red ;">Colombia</span>, que es mi pais
+    </p>
+
   otro elemntos de bloque son: <b>Address, article, aside, audio, canvas, footer, form, hr, main, nav, section,
   </b><br>
   y elemento de linea son: <b>b,big, small, strong, br, img, map, button, input,label </b><br>
@@ -389,11 +407,45 @@
 
   <hr>
   <h2 id="formularios">Formularios Web en html</h2>
-  <div>
-    <h2>Creacion de formularios form</h2>
-    <h3>Caja de texto</h3>
-    <h3>Botones de radio agrupados</h3>
-  </div>
+  <p>
+    se utiliza la etiqueta <b>&lt;form&gt; &lt;/form&gt; </b> <br>
+    dentro de los formularios podemos utilizar controles de canptura por parte de los usuarios<br>
+    los principales son cajas de texto, botones de radio, botones de comando, etc<b></br> 
+    </b>
+  </p>
+  <hr>
+  <h2 id="formularios-cajas-textos">Cajas de textos</h2>
+    Estos no permite capturar texto por parte de los usuarios, se utiliza la etiqueta <b>&lt;input&gt;</b><br>
+    se recomienda acompañarla con la etiqueta <b>&lt;label&gt;&lt;/label&gt;</b>, que contiene la <br>
+    descripcion de texto que le indica al usuario la informacion requerida.<br>
+    por ejemplo : <br>
+    <pre>
+      <code>
+        &lt;form&gt;
+          &lt;label&gt;Nombre del estudiante: &lt;/label&gt;
+          &lt;input&gt;
+        &lt;/form&gt;
+      </code>
+    </pre>  
+    y nos muestra el siguiente resultado <br>
+    <form>
+      <label for="nombEstudiante">Nombre del estudiante </label>
+      <input id="nombEstudiante">
+    </form>
+  <p>
+    si queremos que la eliqueta <b>label</b> este asociada con la <b>caja de texto</b>, debemos colocarle a la <br>
+    caja de texto un <b>Id</b>, y a la etiqueta colocarle al atributo <b>for</b> el nombre del <b>id</b> de la caja de texto <br>
+    por ejemplo le colocaremos a la caja de texto <b>nombEstudiante</b>, quedando de la siguient manera: <br>
+    si el usuario le da un click a la etiueta el foco salta a la caja de texto al que está asociado.<br> 
+    <pre>
+      <code>
+        &lt;form&gt;
+          &lt;label for="nombEstudiante"&gt;Nombre del estudiante: &lt;/label&gt;
+          &lt;input id="nombEstudiante"&gt;
+        &lt;/form&gt;
+      </code>
+    </pre>  
+  </p>
   <form action="/caja.html">
     <input type="text" placeholder="Apellidos" required>
     <br>
