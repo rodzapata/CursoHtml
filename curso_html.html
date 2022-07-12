@@ -48,6 +48,7 @@
     <li><a href="#tablas">Tablas</a></li>
     <li><a href="#formularios">Formularios</a></li>
     <li><a href="#formularios-cajas-textos">Cajas de textos</a></li>
+    <li><a href="#formulario-textArea">Text Area</a></li>
      
   </ui>
   
@@ -423,7 +424,7 @@
       <code>
         &lt;form&gt;
           &lt;label&gt;Nombre del estudiante: &lt;/label&gt;
-          &lt;input&gt;
+          &lt;input&gt; 
         &lt;/form&gt;
       </code>
     </pre>  
@@ -437,17 +438,31 @@
     caja de texto un <b>Id</b>, y a la etiqueta colocarle al atributo <b>for</b> el nombre del <b>id</b> de la caja de texto <br>
     por ejemplo le colocaremos a la caja de texto <b>nombEstudiante</b>, quedando de la siguient manera: <br>
     si el usuario le da un click a la etiueta el foco salta a la caja de texto al que está asociado.<br> 
+    Es muy importante colocar la propiedad <b>name</b> que es el nombre del objeto, en este caso el nombre de <br>
+    la caja de texto <b>nombEstudiante</b>, es el nombre llave que es enviado cuando se envia el formulario y <bR>
+    el valor digitado es el valor enviado.<br> 
     <pre>
       <code>
         &lt;form&gt;
           &lt;label for="nombEstudiante"&gt;Nombre del estudiante: &lt;/label&gt;
-          &lt;input id="nombEstudiante"&gt;
+          &lt;input id="nombEstudiante"&gt; name="nombEstudiante"
         &lt;/form&gt;
       </code>
     </pre>  
   </p>
+  <p>
+    tambien existe la propiedad <b>placeholder</b> que es paracida a la etiqueta, pero en mensaje aparece dentro <br>
+    de la caja de texto. Ademas la propiedad <b>type</b> le indica a la caja de texto, como se va a comportar,<br>
+    puede ser <b>text,button,checkbox, color, date, datetime, date-local, email, file, hiden, imagen, <br>
+    month, number,pasword, radio, submit, etc</b><br>
+
+  </p>
+  <hr>
+  <h2 id="formulario-textArea">Etiqueta &lt;TextArea&gt;&lt;/TextArea&gt;</h2>
+  <hr>
   <form action="/caja.html">
     <input type="text" placeholder="Apellidos" required>
+    <input type="">
     <br>
     <label for="masculino"><input id="masculino" type="radio" value="masculino"
         name="masculino-femenino">Masculino</label>
