@@ -42,6 +42,10 @@
     <li><a href="#comentarios">Comentarios en Html</a></li>
     <li><a href="#etiquetas-cuerpo-main">Etiqueta &lt;main&gt;</a></li>
     <li><a href="#enlaces">Enlaces internos, externo y con imagenes</a></li>
+    <li><a href="#enlaces-correo">Enlaces correo por celular</a></li>
+    <li><a href="#elementos-interactivos">Enlementos interactivos</a></li>
+    <li><a href="#audio-y-video">Audio y video</a></li>
+
     <li><a href="#listas">Listas</a></li>
     <li><a href="#listas-no-ordenda">Listas no ordenadas</a></li>
     <li><a href="#listas-ordenadas">Listas ordenadas</a></li>
@@ -60,6 +64,8 @@
     curso de Html y CSS por Jhonatan mircha <br>
     Tambien el curso de deichoi <a href="https://www.youtube.com/watch?v=Y-OhzQpsRwI">HTL5 Y CCS desde cero</a><br>
     Aprende HTML ahora! curso completo GRATIS desde cero por Nicolas Shulman <a href="https://youtu.be/MJkdaVFHrto">Html</a><br>
+    Esta pagina <a href="https://caniuse.com/">CanIuse</a> nos sirve para conocer las novedades que van apareciendo en Html, <br>
+    La compatibilidad con los navegadores y todo lo que está en etapa experimental.<br>
   </p>
   <a href="curso_html.html">⏫</a>
   <hr>
@@ -321,6 +327,83 @@
   <a href="hola.html" target="_blank">
     <img src="imagenes/gatos.jpg" alt="Enlace que envia a la pagina hola" width="80" height="40">
   </a>
+
+  <a href="curso_html.html">⏫</a>
+  <hr>
+  <h2 id="enlaces-correo">Enlace a correo por celular </h2>
+  <a href="mailto:ccnantillo2019@gmail.com">Enlace a correo electronico</a><br>
+  <a href="tel:3104001193">Enlace a telefono</a><br>
+  <a href="https://api.WhatsApp.com/send?phone=3024694610">Enlace a WhatsApp</a><br>
+
+  <a href="curso_html.html">⏫</a>
+  <hr>
+  <h2 id="elementos-interactivos">Elementos Interactivos </h2>
+  <p>
+    aprenderemos a interactuar los metodos de los objetos llamando a codificacion de JavaScrip. <br>
+    por ejemplo en el siguiente ejemplo vincularemos el mentodo <b>onclick</b> del boton con la <br>
+    funcion <b>alert</b> de JavaScript. 
+    <pre>
+      <code>
+        &lt;button onclick="alert('Haz click en el boton')"&gt;Este es un boton&lt;/button&gt;
+      </code>
+    </pre>
+  </p>
+  <button onclick="alert('Haz click en el boton')">Este es un boton</button><br>
+  <p>Otro elemento interactivo seria la famosa acordeon </p>
+  <p>
+    el codigo seria el siguiente:<br>
+    <pre>
+      <code>
+        &lt;details>
+          &lt;summary>Titulo de la acordeon</summary>
+            &lt;article>
+              &lt;h3>Contenido del acordeon</h3>
+              &lt;p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat quod omnis fugiat quibusdam a expedita non dolorum assumenda vel dicta, numquam pariatur impedit sit soluta alias error vero, accusamus atque.</p>
+              &lt;img src="imagenes/gatos.jpg" width="80" height="40" alt="Gatos">
+              &lt;p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat quod omnis fugiat quibusdam a expedita non dolorum assumenda vel dicta, numquam pariatur impedit sit soluta alias error vero, accusamus atque.</p>
+              &lt;p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat quod omnis fugiat quibusdam a expedita non dolorum assumenda vel dicta, numquam pariatur impedit sit soluta alias error vero, accusamus atque.</p>
+            &lt;/article>
+        &lt;/details>
+      </code>
+    </pre>
+  </p>
+  <details>
+    <summary>Titulo de la acordeon</summary>
+    <article>
+      <h3>Contenido del acordeon</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat quod omnis fugiat quibusdam a expedita non dolorum assumenda vel dicta, numquam pariatur impedit sit soluta alias error vero, accusamus atque.</p>
+      <img src="imagenes/gatos.jpg" width="80" height="40" alt="Gatos">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat quod omnis fugiat quibusdam a expedita non dolorum assumenda vel dicta, numquam pariatur impedit sit soluta alias error vero, accusamus atque.</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat quod omnis fugiat quibusdam a expedita non dolorum assumenda vel dicta, numquam pariatur impedit sit soluta alias error vero, accusamus atque.</p>
+    </article>
+  </details>
+  <p>
+    una ventana de Dialogo o ventana modal, pero esto no está completamente implementado en todos los navegadores, <br>
+    por eso no se recomienda utilisarla del todo, sino realizarla de manera manual con html y hojas de estilo.<br>
+    de todos modos veamos un ejemplo : <br>
+
+  </p>
+  <dialog open="">
+    Esto es una venta modal
+  </dialog>
+ 
+  <a href="curso_html.html">⏫</a>
+  <hr>
+  <h2 id="audio-y-video">Audio y video en Html5 </h2>
+  <p>
+    Anteriormente para poder utilizar audio y video en las paginas web era necesario usar <b>flash</b>, <br>
+    a partir del html5 ya lo podemos utilizar de manera nativa con las etiquetas nuevas. <br>
+    El codigo seria el siguiente : <br>
+    <pre>
+      <code>
+        &lt;audio src="media/Happy_Together.mp3" controls></audio>
+      </code>
+    </pre>
+  </p>
+  <audio src="media/Happy_Together.mp3" controls></audio>
+  <p>
+    
+  </p>
 
   <a href="curso_html.html">⏫</a>
   <hr>
