@@ -55,6 +55,7 @@
     <li><a href="#formularios-cajas-textos">Cajas de textos</a></li>
     <li><a href="#formulario-textArea">Text Area</a></li>
     <li><a href="#formulario-select">select</a></li>
+    <li><a href="#formulario-contactos">formulario de contactos</a></li>
      
   </ui>
   
@@ -68,6 +69,9 @@
     Aprende HTML ahora! curso completo GRATIS desde cero por Nicolas Shulman <a href="https://youtu.be/MJkdaVFHrto">Html</a><br>
     Esta pagina <a href="https://caniuse.com/">CanIuse</a> nos sirve para conocer las novedades que van apareciendo en Html, <br>
     La compatibilidad con los navegadores y todo lo que está en etapa experimental.<br>
+    otra pagina donde encontramos bastantes ejemplos de Html es : 
+    <a href="https://formsubmit.co/">https://formsubmit.co/</a>
+    
   </p>
   <a href="curso_html.html">⏫</a>
   <hr>
@@ -706,6 +710,47 @@ src="media/pdfcoffee.com_a-smarter-way-to-learn-javascript-pdf-free.pdf">
   </p>
   <input type="text" pattern="^[A-Za-z]+$" required title="Solo acepta letras">
 
+  <a href="curso_html.html">⏫</a>
+  <hr>
+  <h2 id="select, checkbox, radio ">select, checkbox, radio</h2>
+  <form>
+    <p>Elige un idioma</p>
+    <select name="idioma" multiple="on">
+      <option value="sp">Español</option>
+      <option value="en">Ingles</option>
+      <option value="fr">Frances</option>
+    </select>
+    <input type="radio" name="lenguaje-js" id="radio-js" value="js">
+    <label for="radio-js">Javascript</label>
+    <input type="radio" name="lenguaje-php" id="radio-php" value="php">
+    <label for="radio-php">PHP</label>
+    <input type="radio" name="lenguaje-Python" id="radio-python" value="python">
+    <label for="radio-python">python</label>
+    <input type="radio" name="lenguaje-React" id="radio-react" value="react">
+    <label for="radio-react">react</label>
+
+    <input type="submit">
+    <input type="reset">
+  </form>
+  <p>
+    note que utilizamos <b>Input Type="submit"</b> y <b>input type="reset"</b> y no estamos usando<br>
+    <b>button type="submit"</b> ni <b>button type="submit"</b>, porque esto era utilizado en navegadores viejos como internet Explore<br>
+    si dentro de las opciones colocamos el atributo <b>Seleted</b>, esta opcion aparecerá como predeterminado. <br>
+    en caso de un radio boton que solo se escoje verdadero o falso, osea: <b>on</b> o <b>off</b> y al llamar la url quedaria así: <br>
+    en cambio en el leguaje si aparece el que se haya escogido: sp, en, fr que aparace en el atributo <b>value</b><br>
+    http://127.0.0.1:5500/curso_html.html?idioma=en&lenguaje=on
+  </p>
+
+  <a href="curso_html.html">⏫</a>
+  <hr>
+  <h2 id="formulario-de-contactos">formulario de contactos</h2>
+  <form>
+    <input type="text" placeholder="Escriba su nombre" name="nombre" pattern="^[A-Za-zÑñáéíóú\s]+$" title="solo aceptan letras y espacios"> <br>
+    <input type="email" placeholder="Escriba su correo" name="correo" pattern=" ^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="solo formato de correo"><br>
+    <textarea placeholder="Escriba una descripcion" rows="10" cols="30" required></textarea> <br>
+    <input type="submit">
+    <input type="reset">
+  </form>
   <h3>Salto de linea (Break Rule) BR</h3>
   <h3>Casilla de verificaion</h3>
   <h3>Elemento Div</h3>
