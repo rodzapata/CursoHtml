@@ -2,57 +2,150 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso de CSS</title>
-    <link href="estilos-css.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de CSS</title>
+  <link href="estilos-css.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <h1>Curso de CSS</h1>
-    <h2>Indice de contenido</h2>
-    <ui>
-        <li><a href="#referencia">Referencias</a></li>
-        <li><a href="#metodo-abreviado-code">Metodo abreviado en Code Studio </a></li>
-        <li><a href="#selectores">selectores</a></li>
-    </ui>
+  <h1>Curso de CSS</h1>
+  <h2>Indice de contenido</h2>
+  <ui>
+    <li><a href="#referencia">Referencias</a></li>
+    <li><a href="#metodo-abreviado-code">Metodo abreviado en Code Studio </a></li>
+    <li><a href="#selectores">selectores</a></li>
+  </ui>
 
-    <a href="curso-css.html">⏫</a>
-    <hr>
-    <h2 id="referencia">Referencias</h2>
+  <a href="curso-css.html">⏫</a>
+  <hr>
+  <h2 id="referencia">Referencias</h2>
 
-    <p>
-        las paginas de referencia para trabajar con CSS son 
-        Tambien la pagina <a href="https://cssreference.io/" target="_blank">CSSReference</a><br>
-        Esta pagina es muy importantes, porque nos enseña todos los atributos de CSS, ideal para los principiantes,
-        otra pagina muy importante es : <br>
-        <a href="https://caniuse.com/" target="_blank">https://caniuse.com</a><br>
-        nos muestra como van implemetando las mejoras en los diferentes navegadores.<br>
-        la pagina para aprender buenas practicas  es :
-        <a href="https://codeguide.co/" target="_blank">https://codeguide.co/</a> <br>
-        Esta paginas nos guia de como crear buen codigo tanto HTML como CSS. <br>
-      </p>
-    
+  <p>
+    La pagina donde podemos encontrar la documentacion oficial es
+    <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">MDN Web Docs</a><br>
+    las paginas de referencia para trabajar con CSS son
+    Tambien la pagina <a href="https://cssreference.io/" target="_blank">CSSReference</a><br>
+    Esta pagina es muy importantes, porque nos enseña todos los atributos de CSS, ideal para los principiantes,
+    otra pagina muy importante es : <br>
+    <a href="https://caniuse.com/" target="_blank">https://caniuse.com</a><br>
+    nos muestra como van implemetando las mejoras en los diferentes navegadores.<br>
+    la pagina para aprender buenas practicas es :
+    <a href="https://codeguide.co/" target="_blank">https://codeguide.co/</a> <br>
+    Esta paginas nos guia de como crear buen codigo tanto HTML como CSS. <br>
+  </p>
 
-    <a href="curso-css.html">⏫</a>
-    <hr>
-    <h2 id="metodo-abreviado-code">Metodos abreviados</h2>
-    <p>
-      los siguienes son metodo abreviado de Code studio <br>
-      Ctrl + } Coloca una linea o bloque en comentarios <br>
-      ! + Tab crea la estructura base de un documento html 5 <br>
-  
-    </p>
-    
-    <a href="curso-css.html">⏫</a>
-    <hr>
-    <h2 id="selectores">Selectores</h2>
-    <p>
-      existen tres tipos de selectores: (etiquetas, identificadores y Clases)
-    </p>
-   
+
+  <a href="curso-css.html">⏫</a>
+  <hr>
+  <h2 id="metodo-abreviado-code">Metodos abreviados</h2>
+  <p>
+    los siguienes son metodo abreviado de Code studio <br>
+    ! + Tab crea la estructura base de un documento html 5 <br>
+    Ctrl + } Coloca una linea o bloque en comentarios <br>
+    Crl + Enter Inserta una linea en blanco. <br>
+    Alt + Fecha abajo mueve una linea hacia abajo <br>
+    Alt + Fecha Arriba mueve una lina hacia arriba <br>
+    Shit + Alt + Fecha abajo Duplica la linea actual hacia abajo<br>    
+
+
+  </p>
+
+  <a href="curso-css.html">⏫</a>
+  <hr>
+  <article id="selectores">
+    <h2>Selectores</h2>
+    existen tres tipos de selectores Básicos: (etiquetas o tipos, identificadores y Clases)
+    las <b>etiquetas</b> son seleccionado por el nombre de los diferentes <b>elementos html</b>, <br>
+    los <b>identificadores</b> hay que seleccionarlos por el atributo <b>id-#</b>,
+    Las <b>Clases</b> hay que seleccionarlas por el atributo <b>. (punto)</b> <br>
+
+    <h3>Combinador de selectores</h3>
+    se puede dar selecciones de objetos que estan cerca o que sean desendiente de un padre comun, por ejemplo:
+    <b>Selectores de hermanos adyacentes</b> hade referencia a un selector próximo o hermano. solo seleccionará
+
+    sintaxis:
+    <pre>
+            elemento_anterior + elemento_afectado { estilos }
+
+            li:first-of-type + li {
+                color: red;
+                
+            }
+        </pre>
+
+    codigo<br>
+    <pre>
+                &lt;ul>
+                  &lt;li>Uno&lt;/li>
+                  &lt;li>Dos&lt;/li>
+                  &lt;li>Tres&lt;/li>
+                &lt;/ul>
+    </pre>
+    <ul>
+      <li>Uno</li>
+      <li>Dos</li>
+      <li>Tres</li>
+    </ul>
+
+    <h3>Selectores de hermanos generales</h3>
+    un elemento especifico que esté inmediatamente despues de otro elemento especificado.<br>
+
+    <b>selector general de hermanos </b> se utliza el simbolo <b>~</b>
+    <pre>
+            Sintaxis: A ~ B
+            Ejemplo: La regla p ~ span se aplicará a todos los elementos &lt;span&gt; que siguen un elemento &lt;p&gt;.
+            p ~ span {
+                color: red;
+            }
+        </pre>
+    <br>
+
+    <span>Este span no es rojo.</span>
+    <p>Aquí hay un párrafo.</p>
+    <code>Aquí hay algo de código.</code>
+    <span>Aquí hay un span. Es rojo porque va precedido de un párrafo y ambos comparten el mismo padre.</span>
+
+    <h3>Selectores de hijos</h3>
+    El combinador <b>></b> selecciona los elementos que son hijos directos del primer elemento.
+    <pre>
+            Sintaxis: A > B
+            
+            span { background-color: white; }
+                div > span {
+                background-color: DodgerBlue;
+            }
+
+        </pre>
+    <div>
+      <span>Span #1, dentro del div.
+        <span>Span #2, dentro del span que está en el div.</span>
+      </span>
+    </div>
+    <span>Span #3, no está dentro del div.</span>
+
+    <h3>Selectores de descendiente</h3>
+    se utiliza el <b>espacio</b><br>
+    <pre>
+            Sintaxis: A B
+            
+            span { background-color: white; }
+                div span { background-color: DodgerBlue; }
+
+        </pre>
+    <div>
+      <span>Span 1.
+        <span>Span 2.</span>
+      </span>
+    </div>
+    <span>Span 3.</span>
+
+
+
+  </article>
+
 
 </body>
 

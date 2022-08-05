@@ -12,3 +12,13 @@ h2{
 table, th, td{
     border: 1px solid black;
 }
+li:first-of-type + li {
+    color: red;
+}
+p ~ span {
+    color: red;
+}
+span { background-color: white; }
+div > span {
+  background-color: DodgerBlue;
+}
