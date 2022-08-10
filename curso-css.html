@@ -48,7 +48,7 @@
     Crl + Enter Inserta una linea en blanco. <br>
     Alt + Fecha abajo mueve una linea hacia abajo <br>
     Alt + Fecha Arriba mueve una lina hacia arriba <br>
-    Shit + Alt + Fecha abajo Duplica la linea actual hacia abajo<br>    
+    Shit + Alt + Fecha abajo Duplica la linea actual hacia abajo<br>
 
 
   </p>
@@ -61,6 +61,7 @@
     las <b>etiquetas</b> son seleccionado por el nombre de los diferentes <b>elementos html</b>, <br>
     los <b>identificadores</b> hay que seleccionarlos por el atributo <b>id-#</b>,
     Las <b>Clases</b> hay que seleccionarlas por el atributo <b>. (punto)</b> <br>
+    el <b>selector universal</b> es el <b>* ( asteriscos)</b><br>
 
     <h3>Combinador de selectores</h3>
     se puede dar selecciones de objetos que estan cerca o que sean desendiente de un padre comun, por ejemplo:
@@ -68,21 +69,21 @@
 
     sintaxis:
     <pre>
-            elemento_anterior + elemento_afectado { estilos }
-
-            li:first-of-type + li {
-                color: red;
-                
-            }
-        </pre>
+      elemento_anterior + elemento_afectado { estilos }
+  
+      li:first-of-type + li {
+          color: red;
+          
+      }
+    </pre>
 
     codigo<br>
     <pre>
-                &lt;ul>
-                  &lt;li>Uno&lt;/li>
-                  &lt;li>Dos&lt;/li>
-                  &lt;li>Tres&lt;/li>
-                &lt;/ul>
+      &lt;ul>
+        &lt;li>Uno&lt;/li>
+        &lt;li>Dos&lt;/li>
+        &lt;li>Tres&lt;/li>
+      &lt;/ul>
     </pre>
     <ul>
       <li>Uno</li>
@@ -95,12 +96,12 @@
 
     <b>selector general de hermanos </b> se utliza el simbolo <b>~</b>
     <pre>
-            Sintaxis: A ~ B
-            Ejemplo: La regla p ~ span se aplicará a todos los elementos &lt;span&gt; que siguen un elemento &lt;p&gt;.
-            p ~ span {
-                color: red;
-            }
-        </pre>
+      Sintaxis: A ~ B
+      Ejemplo: La regla p ~ span se aplicará a todos los elementos &lt;span&gt; que siguen un elemento &lt;p&gt;.
+      p ~ span {
+          color: red;
+      }
+    </pre>
     <br>
 
     <span>Este span no es rojo.</span>
@@ -111,14 +112,14 @@
     <h3>Selectores de hijos</h3>
     El combinador <b>></b> selecciona los elementos que son hijos directos del primer elemento.
     <pre>
-            Sintaxis: A > B
-            
-            span { background-color: white; }
-                div > span {
-                background-color: DodgerBlue;
-            }
-
-        </pre>
+      Sintaxis: A > B
+      
+      span { background-color: white; }
+          div > span {
+          background-color: DodgerBlue;
+      }
+      
+    </pre>
     <div>
       <span>Span #1, dentro del div.
         <span>Span #2, dentro del span que está en el div.</span>
@@ -129,12 +130,12 @@
     <h3>Selectores de descendiente</h3>
     se utiliza el <b>espacio</b><br>
     <pre>
-            Sintaxis: A B
-            
-            span { background-color: white; }
-                div span { background-color: DodgerBlue; }
-
-        </pre>
+      Sintaxis: A B
+      
+      span { background-color: white; }
+          div span { background-color: DodgerBlue; }
+     
+    </pre>
     <div>
       <span>Span 1.
         <span>Span 2.</span>
