@@ -17,6 +17,7 @@
     <li><a href="#referencia">Referencias</a></li>
     <li><a href="#metodo-abreviado-code">Metodo abreviado en Code Studio </a></li>
     <li><a href="#selectores">selectores</a></li>
+    <li><a href="#bordes">bordes</a></li>
   </ui>
 
   <a href="curso-css.html">⏫</a>
@@ -143,10 +144,67 @@
     </div>
     <span>Span 3.</span>
 
-
-
   </article>
 
+  <a href="curso-css.html">⏫</a>
+  <hr>
+  <h2>Bordes (estilos)</h2>
+  <article id="bodes">
+    Es el recuardo o cuadro que embarca un objeto, existen diferentes estilos como son: <br>
+    <b>none, double,groove, dotted, inset, solid, dashed</b><br>
+     donde <b>none</b> es sin bordes, <br>
+    <b>double</b> coloca un recuadro de doble linea, <br>
+    <b>groove</b> ranura, linea delgada <br>
+    <b>dotted</b> punteado, <br>
+    <b>inset</b> inserta un recuadro con el borde izquierdo y superior oscuro en contraste con
+    un border inferior y derecho mas claro.<br>
+    <b>solid</b> es un recuadro totalemente oscuro, linea gruesa, sin ningun tipo de constrate.<br>
+    <b>dashed</b> bordes con guiones, rayado. <br>
+
+    ejemplo :
+    <h3 id="borde-doble">ejemplo de bordes doble</h3>
+    <pre>
+      Codigo Html:
+
+      &lt;h3 id="borde-ejemplo1">ejemplo de bordes doble&lt;/h3>
+
+      Codigo CSS:
+
+      #borde-ejemplo1{
+        border-style: double;
+      }
+    </pre>
+    es posible combinar varios estilos, como son cutro bodes se colocan en direccion a las manecillas del reloj ose : <br>
+    border superior, derecha, inferior, izquieda. <br>
+
+    <h3 id="borde-combinado">ejemplo de bordes combinado</h3>
+    <pre>
+      Codigo HTMl:
+      &lt;h3 id="borde-combinado">ejemplo de bordes combinados&lt;/h3>
+
+      codigo CSS:
+      #borde-combinado{
+        border-style: double dotted solid none;
+      }
+
+    </pre>
+    Tambien podemos agregarles mas propiedades a los bordes como el color, o el radio de los 
+    <h3 id="borde-rendondeados">ejemplo de bordes redondeados, color</h3>
+
+    <pre>
+      Codigo HTMl:
+      &lt;h3 id="borde-rendondeados">ejemplo de bordes redondeados, color&lt;/h3>
+
+      codigo CSS:
+      #borde-rendondeados{
+        border-style: solid;
+        border-color: blue;
+        border-radius:5px ;
+        border-width: 5px;
+      }
+    </pre>
+
+  </article>
 
 </body>
 

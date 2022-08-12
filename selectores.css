@@ -3,20 +3,28 @@
     padding: 0;
 } */
 
-h1,h2,h3{
+/* h1,h2,h3{
     color: brown;
-}
+} */
 
 /* h1{
     font-size: 50px;
 } */
-p{
+.texto{
+    color:green;
+}
+.especial{
     color:orange;
 }
-p a{
-    font-size: 20px;
+/* div p, h2 {
+    color:brown;
+} */
+
+
+div p, div h2{
+    color:purple;
 }
 
-.green  {
-    color: green;
+*{
+    color: black;
 }

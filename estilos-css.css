@@ -22,3 +22,17 @@ span { background-color: white; }
 div > span {
   background-color: DodgerBlue;
 }
+
+#borde-doble{
+    border-style:double;
+}
+
+#borde-combinado{
+    border-style: double dotted solid none;
+}
+#borde-rendondeados{
+    border-style: solid;
+    border-color: blue;
+    border-radius:5px ;
+    border-width: 5px;
+}
