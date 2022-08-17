@@ -18,6 +18,11 @@
     <li><a href="#metodo-abreviado-code">Metodo abreviado en Code Studio </a></li>
     <li><a href="#selectores">selectores</a></li>
     <li><a href="#bordes">bordes</a></li>
+    <li><a href="#fondo">fondo</a></li>
+    <li><a href="#color-enlace">color en los enlaces</a></li>
+    <li><a href="#listas">estilos en las listas</a></li>
+    <li><a href="#tablas">estilos en las tablas</a></li>
+    <li><a href="#display">Display</a></li>
   </ui>
 
   <a href="curso-css.html">⏫</a>
@@ -152,7 +157,7 @@
   <article id="bodes">
     Es el recuardo o cuadro que embarca un objeto, existen diferentes estilos como son: <br>
     <b>none, double,groove, dotted, inset, solid, dashed</b><br>
-     donde <b>none</b> es sin bordes, <br>
+    donde <b>none</b> es sin bordes, <br>
     <b>double</b> coloca un recuadro de doble linea, <br>
     <b>groove</b> ranura, linea delgada <br>
     <b>dotted</b> punteado, <br>
@@ -174,7 +179,8 @@
         border-style: double;
       }
     </pre>
-    es posible combinar varios estilos, como son cutro bodes se colocan en direccion a las manecillas del reloj ose : <br>
+    es posible combinar varios estilos, como son cutro bodes se colocan en direccion a las manecillas del reloj ose :
+    <br>
     border superior, derecha, inferior, izquieda. <br>
 
     <h3 id="borde-combinado">ejemplo de bordes combinado</h3>
@@ -188,7 +194,7 @@
       }
 
     </pre>
-    Tambien podemos agregarles mas propiedades a los bordes como el color, o el radio de los 
+    Tambien podemos agregarles mas propiedades a los bordes como el color, o el radio de los
     <h3 id="borde-rendondeados">ejemplo de bordes redondeados, color</h3>
 
     <pre>
@@ -206,6 +212,189 @@
 
   </article>
 
+  <a href="curso-css.html">⏫</a>
+  <hr>
+  <h2 id="fondo">fondo</h2>
+  <article>
+    Se puede colocar como fondo un color o una imagen
+  </article>
+  <article id="fondo-color">
+    soy una propiedad de backgroup (fondo)
+  </article>
+  <article id="fondo-imagen">
+    soy una imagen de fondo
+  </article>
+  <div class="margen">
+    margen de linea de texto
+  </div>
+
+  <a href="curso-css.html">⏫</a>
+  <hr>
+  <h2 id="color-enlace">Color en los enlace</h2>
+  <article>
+    cuando se ha visitado un sitio que tiene un <b>HREF</b>, ya se aun <b>&lt;a&gt;</b> o un <b>&lt;link&gt;</b>, <br>
+    cambia el color del enlace esto lo podemos personalizar con hojas de estilos. <br>
+    por ejemplo si no se ha visitado el enlace que sea de color azul violeta
+    <pre>
+      <code>
+        ejemplo CSS enlace sin visitar
+        a:link{
+          color: blueviolet;
+        }
+      </code>
+    </pre>
+
+    en caso que se haya visitado el enlace que se coloque de color gris .<br>
+    <pre>
+      <code>
+        ejemplo CSS enlace visitado
+        a:visited{
+          color: gray;
+        }
+      </code>
+    </pre>
+    cuando el usuario se coloca sobre un objeto de enlace, pero sin darle clik cambia el color del objeto a color amarillo verdoso.<br>
+    <pre>
+      <code>
+        ejemplo CSS
+        a:hover{
+          color: yellowgreen;
+        }
+      </code>
+    </pre>
+    si el enlace está activo, que se vea de color rojo. <br>
+    <pre>
+      <code>
+        ejemplo CSS enlace activo
+        a:active{
+          color: red;
+        }
+      </code>
+    </pre>
+
+    <a href="#">prueba de enlace</a>
+  </article>
+
+  <a href="curso-css.html">⏫</a>
+  <hr>
+  <h2 id="listas">estilos en las listas</h2>
+  <article>
+    podemos cambiar el estilo a las lista como en el siguiente ejemplo: <br>
+    <pre>
+      <code>
+        ejemplo CSS
+        .list-uno{
+          list-style-type: circle;
+          background-color: white;
+          list-style-position: inside;
+        }
+      </code>
+    </pre>
+  </article>
+  <ul class="list-uno">List 1
+    <li>Uno</li>
+    <li>dos con un texto un poco mas largo para ver como se comporta</li>
+    <li>tres</li>
+  </ul>
+
+  <ul class="list-dos">List 2
+    <li>Uno</li>
+    <li>dos con un texto un poco mas largo para ver como se comporta</li>
+    <li>tres</li>
+  </ul>
+
+  <ul class="list-tres">List 3
+    <li>Uno</li>
+    <li>dos con un texto un poco mas largo para ver como se comporta</li>
+    <li>tres</li>
+  </ul>
+
+
+  <a href="curso-css.html">⏫</a>
+  <hr>
+  <h2 id="tablas">estilos en las tablas</h2>
+  <article>
+    la propiedad <b>border-collapse</b>, es utlizadas para unir o separar los bordes, <b>collapse</b> unidos o <b>separate</b> separados.<br>
+    <b>:nth-child</b> funcion que nos permite seleccionar una condicion de los objetos hermanos, donde <b>odd</b> son los elementos impares<br>
+    y <b>even</b> son los elementos pares dentro de los registros de una tabla. <br>
+    en ese ejemplo los item paren van ha tener el color verde como se muestra en el siguiente ejemplo: <br>
+    <pre>
+      <code>
+        ejemplo css
+        .tabla-familia tr:nth-child(even){
+          background-color: green;
+        }
+      </code>
+    </pre>
+
+    Tambien se puede utilizar <b>Hover</b> para que cambie de color gris cuando seleccionamos un registro de la tabla.<br>
+    <pre>
+      <code>
+        Ejemplo CSS
+        .tabla-familia tr:hover{
+          background-color: gray;
+        }
+      
+      </code>
+    </pre>
+    ejemplo de <b>:nth-child</b> <br>
+    <pre>
+      <code>
+        .tabla-familia tr:nth-child(even){
+          background-color: green;
+        }
+      </code>
+    </pre>
+  </article>
+  <table class="tabla-familia">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>parentesco</th>
+        <th>edad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Rodney Zapata</td>
+        <td>padre</td>
+        <td>47</td>
+      </tr>
+      <tr>
+        <td>Cecilia Cantillo</td>
+        <td>madre</td>
+        <td>34</td>
+      </tr>
+      <tr>
+        <td>Juan Miguel Zapata</td>
+        <td>hijo</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>Samuel David Zapata</td>
+        <td>hijo</td>
+        <td>6</td>
+      </tr>
+
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+  </table>
+
+
+  <a href="curso-css.html">⏫</a>
+  <hr>
+  <h2 id="display">Display</h2>
+  <article>
+    especifica si un elemento es tratado como <b>block</b> ose uno debajo de otro, o <b>Inline</b>, un elemento al lado del otro.<br>
+    y el diseño utilizado para sus hijos, como <b>flow layout</b> (Diseño de flujo), <b>grid</b> (Cuadricula) o <b>flex</b> flexible.<br>
+
+    la propiedad <b>Display</b> establece dos tipos de visualizacion: <b>interna </b> y <b>externa</b> de un elemento. <br>
+    la <b>externa</b> es como se comporta con los otros elementos, y la <b>interna </b> es como se comporta con sus elementos hijos.<br>
+
+    
+  </article>
 </body>
 
 </html>

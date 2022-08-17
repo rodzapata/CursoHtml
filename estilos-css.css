@@ -9,9 +9,9 @@ body{
 h2{
     color: orangered;
 }
-table, th, td{
+/* table, th, td{
     border: 1px solid black;
-}
+} */
 li:first-of-type + li {
     color: red;
 }
@@ -35,4 +35,68 @@ div > span {
     border-color: blue;
     border-radius:5px ;
     border-width: 5px;
+}
+
+#fondo-color{
+    background-color: rgb(69, 173, 173);
+    /* opacity: 0.3; */
+}
+#fondo-imagen{
+    background-image: url("/imagenes/coffee.png");
+    height: 300px;
+    background-size: contain;
+}
+.margen{
+    background-color: chocolate;
+    border: solid 1px;
+    margin: 15px 20px 25px 30px;
+    padding: 30px 25px 20px 15px;
+    height: 100px;
+    width: 50px;
+}
+a:link{
+    color: blueviolet;
+}
+a:visited{
+    color: gray;
+}
+a:hover{
+    color: yellowgreen;
+}
+a:active{
+    color: red;
+}
+ul{
+    background-color: aqua;
+    /* list-style-type: none; */
+    /* padding-left: 0; */
+}
+
+.list-uno{
+    list-style-type: circle;
+    background-color: white;
+    list-style-position: inside;
+}
+.list-dos{
+    list-style-type:decimal;
+    list-style-position: outside;
+}
+.list-tres{
+    list-style-type: disc;
+    list-style-position: inherit;
+}
+.tabla-familia{
+    border-collapse: collapse;
+}
+.tabla-familia th,td{
+    border: 1px solid;
+}
+.tabla-familia th{
+    background-color: orangered;
+}
+.tabla-familia tr:hover{
+    background-color: gray;
+}
+.tabla-familia tr:nth-child(even){
+    background-color: green;
 }
