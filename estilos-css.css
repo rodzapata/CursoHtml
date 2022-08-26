@@ -100,3 +100,11 @@ ul{
 .tabla-familia tr:nth-child(even){
     background-color: green;
 }
+.grilla{
+    display: grid;
+    grid-template-columns: 60px 120px 30px;
+    /* grid-template-rows:20px ; */
+}
+.element{
+    background-color: aqua;
+}

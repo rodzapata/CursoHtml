@@ -23,6 +23,7 @@
     <li><a href="#listas">estilos en las listas</a></li>
     <li><a href="#tablas">estilos en las tablas</a></li>
     <li><a href="#display">Display</a></li>
+    <li><a href="#grilla">Grilla</a></li>
   </ui>
 
   <a href="curso-css.html">⏫</a>
@@ -395,6 +396,51 @@
 
     
   </article>
+
+  <a href="curso-css.html">⏫</a>
+  <hr>
+  <h2 id="grilla">Grilla</h2>
+  <article>
+    la grilla o Grid se arma usando <b>Div</b> y se combina con la propiedad <b>Display=Grid</b><br>
+    con la propiedad <b>grid-template-columns:</b> podemos establecer el tamaño de las columnas, en este caso serian 3 columnas <br>
+    de tamaño 60px 120px 30px, es caso que el contenido del texto no cabe en el tamaño de la columna asignada se recorta el contenido del texto. <br>
+    <b>grid-template-rows:20px ;</b> estable un alto de la linea de 20 pixeles. Tambien se puede utlizar <b>fr</b> que seria fracccion,<br>
+    por ejemplo que la segunda columna sea el doble de tamaño de la primera y la tercera sea tres veces mas ancha que la primera, asi: <br>
+    <b>grid-template-columns: 1fr 2fr 3fr;</b> en caso que queramos que las 3 columnas sean del mismo ancho se puede utiliar la propiedad <br>
+    <b>Repeat</b> de la siguiente manera: <b>grid-template-columns: repeat(3, 1fr);</b>
+    <pre>
+      <code>
+        .grilla{
+          display: grid;
+          grid-template-columns: 60px 120px 30px;
+          grid-template-rows:20px ;
+        }
+        .element{
+          background-color: aqua;
+        }
+      
+
+        &lt;div class="grilla">
+          &lt;div class="element">AAAAA&lt;/div>
+          &lt;div class="element">B&lt;/div>
+          &lt;div class="element">C&lt;/div>
+          &lt;div class="element">D&lt;/div>
+          &lt;div class="element">E&lt;/div>
+          &lt;div class="element">F&lt;/div>
+        &lt;/div>
+      
+      </code>
+    </pre>    
+  </article>
+  <div class="grilla">
+    <div class="element">AAAAA</div>
+    <div class="element">B</div>
+    <div class="element">C</div>
+    <div class="element">D</div>
+    <div class="element">E</div>
+    <div class="element">F</div>
+  </div>
+
 </body>
 
 </html>
