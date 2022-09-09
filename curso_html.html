@@ -590,6 +590,59 @@ src="media/pdfcoffee.com_a-smarter-way-to-learn-javascript-pdf-free.pdf">
     </tfoot>
   </table>
 
+  <h3>Tercer ejemplo de tablas</h3>
+  <article>
+    en el segundo item uniremos la primera y la segunda columna utilizando la propiedad <b>colspan</b>, para esto le decimos a la <br>
+    columna una que va a utilizar 2 columnas de la siguiente forma: <br>
+    <pre>
+      <code>
+        &lt;table>
+          &lt;thead>
+              &lt;tr>
+                  &lt;th>Campo 1&lt;/th>
+                  &lt;th>Campo 2&lt;/th>
+                  &lt;th>Campo 3&lt;/th>
+              &lt;/tr>
+          &lt;/thead>
+          &lt;tbody>
+              &lt;tr>
+                  &lt;td>Valor 1&lt;/td>
+                  &lt;td>Valor 2&lt;/td>
+                  &lt;td>Valor 3&lt;/td>
+              &lt;/tr>
+      
+              &lt;tr>
+                &lt;td colspan="2">Valor 4&lt;/td>
+                &lt;td>Valor 6&lt;/td>
+              &lt;/tr>
+          &lt;/tbody>
+        &lt;/table>
+      
+      </code>
+    </pre>
+
+  </article>
+  <table>
+    <thead>
+        <tr>
+            <th>Campo 1</th>
+            <th>Campo 2</th>
+            <th>Campo 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Valor 1</td>
+            <td>Valor 2</td>
+            <td>Valor 3</td>
+        </tr>
+
+        <tr>
+          <td colspan="2">Valor 4</td>
+          <td>Valor 6</td>
+      </tr>
+  </tbody>
+</table>
 
   <a href="curso_html.html">⏫</a>
   <hr>
@@ -715,7 +768,8 @@ src="media/pdfcoffee.com_a-smarter-way-to-learn-javascript-pdf-free.pdf">
   <br>
   <p>
     Si queremos que se pueda escoger mas de un opcion del listado igual que en el <b>input type file</b> <br>
-    hay que utilizar el atributo <b>multiple</b> quedando el codigo de la siguiente manera
+    hay que utilizar el atributo <b>multiple</b> quedando el codigo de la siguiente manera, <br>
+    el usuario para seleccinar varias opciones debe usar la techa <b>Ctrl + Clip en las opciones deseadas</b>
     <pre>
       <code>
         &lt;select name="" id="" multiple&gt; 
@@ -736,6 +790,57 @@ src="media/pdfcoffee.com_a-smarter-way-to-learn-javascript-pdf-free.pdf">
     <option>java</option>
   </select>
   <br>
+  <h3>Ejemplo de radio botones</h3>
+  <div>Seleccione una de las siguientes opciones</div>
+  <div>
+    <input type="radio" value="valor 1" id="rad_uno" name="optiongroup">opcion 1
+  </div>
+  <div>
+    <input type="radio" value="valor 2" id="rad_dos" name="optiongroup">opcion 2
+  </div>
+  <div>
+    <input type="radio" value="valor 3" id="rad_tres" name="optiongroup">opcion 3
+  </div>
+  <br>
+  <article>
+  si tenemos un grupo de botones y queremos que se comporte como un grupo debemos colocarle a todos el mismo nombre <b>name</b>,<br>
+  como se muestra a continuacion ; <br>
+  <pre>
+    <code>
+      &lt;div>Seleccione una de las siguientes opciones&lt;/div>
+      &lt;div>
+        &lt;input type="radio" value="valor 1" id="rad_uno" name="optiongroup">opcion 1
+      &lt;/div>
+      &lt;div>
+        &lt;input type="radio" value="valor 2" id="rad_dos" name="optiongroup">opcion 2
+      &lt;/div>
+      &lt;div>
+        &lt;input type="radio" value="valor 3" id="rad_tres" name="optiongroup">opcion 3
+      &lt;/div>
+    </code>
+  </pre>
+</article>
+  <h3>ejemplo de radio botones 2</h3>
+  <fieldset>
+    <legend>Select a maintenance drone:</legend>
+
+    <div>
+      <input type="radio" id="huey" name="drone" value="huey"
+             checked>
+      <label for="huey">Huey</label>
+    </div>
+
+    <div>
+      <input type="radio" id="dewey" name="drone" value="dewey">
+      <label for="dewey">Dewey</label>
+    </div>
+
+    <div>
+      <input type="radio" id="louie" name="drone" value="louie">
+      <label for="louie">Louie</label>
+    </div>
+</fieldset>
+
   <p>
     Ejemplo de una caja de texto de solo lectura, se coloca el atributo <b>readonly</b><br>
     si queremos que se vea un poco opaco se le coloca el otributo <b>disabled</b>
@@ -762,6 +867,7 @@ src="media/pdfcoffee.com_a-smarter-way-to-learn-javascript-pdf-free.pdf">
       <option value="en">Ingles</option>
       <option value="fr">Frances</option>
     </select>
+    <br>
     <input type="radio" name="lenguaje-js" id="radio-js" value="js">
     <label for="radio-js">Javascript</label>
     <input type="radio" name="lenguaje-php" id="radio-php" value="php">

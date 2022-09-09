@@ -11,452 +11,508 @@
 </head>
 
 <body>
-  <h1>Curso de CSS</h1>
-  <h2>Indice de contenido</h2>
-  <ui>
-    <li><a href="#referencia">Referencias</a></li>
-    <li><a href="#token-git">Token Git</a></li>
-    <li><a href="#metodo-abreviado-code">Metodo abreviado en Code Studio </a></li>
-    <li><a href="#selectores">selectores</a></li>
-    <li><a href="#bordes">bordes</a></li>
-    <li><a href="#fondo">fondo</a></li>
-    <li><a href="#color-enlace">color en los enlaces</a></li>
-    <li><a href="#listas">estilos en las listas</a></li>
-    <li><a href="#tablas">estilos en las tablas</a></li>
-    <li><a href="#display">Display</a></li>
-    <li><a href="#grilla">Grilla</a></li>
-  </ui>
+  <header>
+    <h1>Curso de CSS</h1>
+  </header>
+  <section class="container">
+    <h2>Indice de contenido</h2>
+    <ui>
+      <li><a href="#referencia">Referencias</a></li>
+      <li><a href="#token-git">Token Git</a></li>
+      <li><a href="#metodo-abreviado-code">Metodo abreviado en Code Studio </a></li>
+      <li><a href="#selectores">selectores</a></li>
+      <li><a href="#bordes">bordes</a></li>
+      <li><a href="#fondo">fondo</a></li>
+      <li><a href="#color-enlace">color en los enlaces</a></li>
+      <li><a href="#listas">estilos en las listas</a></li>
+      <li><a href="#tablas">estilos en las tablas</a></li>
+      <li><a href="#display">Display</a></li>
+      <li><a href="#flex-box-estilo">maquetacion Estilo Flex Box</a></li>
+      <li><a href="#grilla-estilo">maquetacion Grilla</a></li>
+      <li><a href="#alinear-espacios">alinear espacios entre item</a></li>
 
-  <a href="curso-css.html">⏫</a>
-  <hr>
-  <h2 id="referencia">Referencias</h2>
-
-  <p>
-    La pagina donde podemos encontrar la documentacion oficial es
-    <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">MDN Web Docs</a><br>
-    las paginas de referencia para trabajar con CSS son
-    Tambien la pagina <a href="https://cssreference.io/" target="_blank">CSSReference</a><br>
-    Esta pagina es muy importantes, porque nos enseña todos los atributos de CSS, ideal para los principiantes,
-    otra pagina muy importante es : <br>
-    <a href="https://caniuse.com/" target="_blank">https://caniuse.com</a><br>
-    nos muestra como van implemetando las mejoras en los diferentes navegadores.<br>
-    la pagina para aprender buenas practicas es :
-    <a href="https://codeguide.co/" target="_blank">https://codeguide.co/</a> <br>
-    Esta paginas nos guia de como crear buen codigo tanto HTML como CSS. <br>
-  </p>
-
-  <a href="curso-css.html">⏫</a>
-  <hr>
-  <h2 id="token-git">token Git</h2>
-  <article>
-    Como cada cierto tiempo hay que generar un token hay que ralizar los siguientes pasos: <br>
-    dentro del menu que aparece en la parte superior derecha aparece un mundo con una cruz, <br>
-    escogemos <b>settings</b> y esogemos la ultima opcion <b>Developer settings</b>, <br>
-    por ultimo escogemos <b>Personal access Token</b>, le damos al boton <b>Create new token</b><br>
-    debemos escribir una <b>note</b> un nombre por ejemplo Compaq28082022 para identificar, <br>
-    la maquina de donde se esta actualizando y la fecha de la actualizacion, ahora en <b>Select scope</b>  <br>
-    hay que chulear la opcion <b>repo</b> (full control of private repositories), <br>
-    ojo que si no se chulea esta opcion no funciona el token, por utlimo le datos click al boton, <br>
-    <b>Generate Token</b>
-
-  </article>
-
-
-  <a href="curso-css.html">⏫</a>
-  <hr>
-  <h2 id="metodo-abreviado-code">Metodos abreviados</h2>
-  <p>
-    los siguienes son metodo abreviado de Code studio <br>
-    ! + Tab crea la estructura base de un documento html 5 <br>
-    Ctrl + } Coloca una linea o bloque en comentarios <br>
-    Crl + Enter Inserta una linea en blanco. <br>
-    Alt + Fecha abajo mueve una linea hacia abajo <br>
-    Alt + Fecha Arriba mueve una lina hacia arriba <br>
-    Shit + Alt + Fecha abajo Duplica la linea actual hacia abajo<br>
-
-
-  </p>
-
-  <a href="curso-css.html">⏫</a>
-  <hr>
-  <article id="selectores">
-    <h2>Selectores</h2>
-    existen tres tipos de selectores Básicos: (etiquetas o tipos, identificadores y Clases)
-    las <b>etiquetas</b> son seleccionado por el nombre de los diferentes <b>elementos html</b>, <br>
-    los <b>identificadores</b> hay que seleccionarlos por el atributo <b>id-#</b>,
-    Las <b>Clases</b> hay que seleccionarlas por el atributo <b>. (punto)</b> <br>
-    el <b>selector universal</b> es el <b>* ( asteriscos)</b><br>
-
-    <h3>Combinador de selectores</h3>
-    se puede dar selecciones de objetos que estan cerca o que sean desendiente de un padre comun, por ejemplo:
-    <b>Selectores de hermanos adyacentes</b> hade referencia a un selector próximo o hermano. solo seleccionará
-
-    sintaxis:
-    <pre>
-      elemento_anterior + elemento_afectado { estilos }
+      
+    </ui>
   
-      li:first-of-type + li {
-          color: red;
-          
-      }
-    </pre>
-
-    codigo<br>
-    <pre>
-      &lt;ul>
-        &lt;li>Uno&lt;/li>
-        &lt;li>Dos&lt;/li>
-        &lt;li>Tres&lt;/li>
-      &lt;/ul>
-    </pre>
-    <ul>
-      <li>Uno</li>
-      <li>Dos</li>
-      <li>Tres</li>
-    </ul>
-
-    <h3>Selectores de hermanos generales</h3>
-    un elemento especifico que esté inmediatamente despues de otro elemento especificado.<br>
-
-    <b>selector general de hermanos </b> se utliza el simbolo <b>~</b>
-    <pre>
-      Sintaxis: A ~ B
-      Ejemplo: La regla p ~ span se aplicará a todos los elementos &lt;span&gt; que siguen un elemento &lt;p&gt;.
-      p ~ span {
-          color: red;
-      }
-    </pre>
-    <br>
-
-    <span>Este span no es rojo.</span>
-    <p>Aquí hay un párrafo.</p>
-    <code>Aquí hay algo de código.</code>
-    <span>Aquí hay un span. Es rojo porque va precedido de un párrafo y ambos comparten el mismo padre.</span>
-
-    <h3>Selectores de hijos</h3>
-    El combinador <b>></b> selecciona los elementos que son hijos directos del primer elemento.
-    <pre>
-      Sintaxis: A > B
+    <a href="curso-css.html">⏫</a>
+    <hr>
+    <h2 id="referencia">Referencias</h2>
+  
+    <p>
+      La pagina donde podemos encontrar la documentacion oficial es
+      <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">MDN Web Docs</a><br>
+      las paginas de referencia para trabajar con CSS son
+      Tambien la pagina <a href="https://cssreference.io/" target="_blank">CSSReference</a><br>
+      Esta pagina es muy importantes, porque nos enseña todos los atributos de CSS, ideal para los principiantes,
+      otra pagina muy importante es : <br>
+      <a href="https://caniuse.com/" target="_blank">https://caniuse.com</a><br>
+      nos muestra como van implemetando las mejoras en los diferentes navegadores.<br>
+      la pagina para aprender buenas practicas es :
+      <a href="https://codeguide.co/" target="_blank">https://codeguide.co/</a> <br>
+      Esta paginas nos guia de como crear buen codigo tanto HTML como CSS. <br>
+      Master en CSS <a href="https://www.youtube.com/watch?v=zPLNe3cDP8g&list=PLBdkl5-ytBTy0eedUcQ6t8Q8M5clbxLh-">Master CSS</a><br>
       
-      span { background-color: white; }
-          div > span {
-          background-color: DodgerBlue;
-      }
-      
-    </pre>
-    <div>
-      <span>Span #1, dentro del div.
-        <span>Span #2, dentro del span que está en el div.</span>
-      </span>
-    </div>
-    <span>Span #3, no está dentro del div.</span>
-
-    <h3>Selectores de descendiente</h3>
-    se utiliza el <b>espacio</b><br>
-    <pre>
-      Sintaxis: A B
-      
-      span { background-color: white; }
-          div span { background-color: DodgerBlue; }
-     
-    </pre>
-    <div>
-      <span>Span 1.
-        <span>Span 2.</span>
-      </span>
-    </div>
-    <span>Span 3.</span>
-
-  </article>
-
-  <a href="curso-css.html">⏫</a>
-  <hr>
-  <h2>Bordes (estilos)</h2>
-  <article id="bodes">
-    Es el recuardo o cuadro que embarca un objeto, existen diferentes estilos como son: <br>
-    <b>none, double,groove, dotted, inset, solid, dashed</b><br>
-    donde <b>none</b> es sin bordes, <br>
-    <b>double</b> coloca un recuadro de doble linea, <br>
-    <b>groove</b> ranura, linea delgada <br>
-    <b>dotted</b> punteado, <br>
-    <b>inset</b> inserta un recuadro con el borde izquierdo y superior oscuro en contraste con
-    un border inferior y derecho mas claro.<br>
-    <b>solid</b> es un recuadro totalemente oscuro, linea gruesa, sin ningun tipo de constrate.<br>
-    <b>dashed</b> bordes con guiones, rayado. <br>
-
-    ejemplo :
-    <h3 id="borde-doble">ejemplo de bordes doble</h3>
-    <pre>
-      Codigo Html:
-
-      &lt;h3 id="borde-ejemplo1">ejemplo de bordes doble&lt;/h3>
-
-      Codigo CSS:
-
-      #borde-ejemplo1{
-        border-style: double;
-      }
-    </pre>
-    es posible combinar varios estilos, como son cutro bodes se colocan en direccion a las manecillas del reloj ose :
-    <br>
-    border superior, derecha, inferior, izquieda. <br>
-
-    <h3 id="borde-combinado">ejemplo de bordes combinado</h3>
-    <pre>
-      Codigo HTMl:
-      &lt;h3 id="borde-combinado">ejemplo de bordes combinados&lt;/h3>
-
-      codigo CSS:
-      #borde-combinado{
-        border-style: double dotted solid none;
-      }
-
-    </pre>
-    Tambien podemos agregarles mas propiedades a los bordes como el color, o el radio de los
-    <h3 id="borde-rendondeados">ejemplo de bordes redondeados, color</h3>
-
-    <pre>
-      Codigo HTMl:
-      &lt;h3 id="borde-rendondeados">ejemplo de bordes redondeados, color&lt;/h3>
-
-      codigo CSS:
-      #borde-rendondeados{
-        border-style: solid;
-        border-color: blue;
-        border-radius:5px ;
-        border-width: 5px;
-      }
-    </pre>
-
-  </article>
-
-  <a href="curso-css.html">⏫</a>
-  <hr>
-  <h2 id="fondo">fondo</h2>
-  <article>
-    Se puede colocar como fondo un color o una imagen
-  </article>
-  <article id="fondo-color">
-    soy una propiedad de backgroup (fondo)
-  </article>
-  <article id="fondo-imagen">
-    soy una imagen de fondo
-  </article>
-  <div class="margen">
-    margen de linea de texto
-  </div>
-
-  <a href="curso-css.html">⏫</a>
-  <hr>
-  <h2 id="color-enlace">Color en los enlace</h2>
-  <article>
-    cuando se ha visitado un sitio que tiene un <b>HREF</b>, ya se aun <b>&lt;a&gt;</b> o un <b>&lt;link&gt;</b>, <br>
-    cambia el color del enlace esto lo podemos personalizar con hojas de estilos. <br>
-    por ejemplo si no se ha visitado el enlace que sea de color azul violeta
-    <pre>
-      <code>
-        ejemplo CSS enlace sin visitar
-        a:link{
-          color: blueviolet;
-        }
-      </code>
-    </pre>
-
-    en caso que se haya visitado el enlace que se coloque de color gris .<br>
-    <pre>
-      <code>
-        ejemplo CSS enlace visitado
-        a:visited{
-          color: gray;
-        }
-      </code>
-    </pre>
-    cuando el usuario se coloca sobre un objeto de enlace, pero sin darle clik cambia el color del objeto a color amarillo verdoso.<br>
-    <pre>
-      <code>
-        ejemplo CSS
-        a:hover{
-          color: yellowgreen;
-        }
-      </code>
-    </pre>
-    si el enlace está activo, que se vea de color rojo. <br>
-    <pre>
-      <code>
-        ejemplo CSS enlace activo
-        a:active{
-          color: red;
-        }
-      </code>
-    </pre>
-
-    <a href="#">prueba de enlace</a>
-  </article>
-
-  <a href="curso-css.html">⏫</a>
-  <hr>
-  <h2 id="listas">estilos en las listas</h2>
-  <article>
-    podemos cambiar el estilo a las lista como en el siguiente ejemplo: <br>
-    <pre>
-      <code>
-        ejemplo CSS
-        .list-uno{
-          list-style-type: circle;
-          background-color: white;
-          list-style-position: inside;
-        }
-      </code>
-    </pre>
-  </article>
-  <ul class="list-uno">List 1
-    <li>Uno</li>
-    <li>dos con un texto un poco mas largo para ver como se comporta</li>
-    <li>tres</li>
-  </ul>
-
-  <ul class="list-dos">List 2
-    <li>Uno</li>
-    <li>dos con un texto un poco mas largo para ver como se comporta</li>
-    <li>tres</li>
-  </ul>
-
-  <ul class="list-tres">List 3
-    <li>Uno</li>
-    <li>dos con un texto un poco mas largo para ver como se comporta</li>
-    <li>tres</li>
-  </ul>
-
-
-  <a href="curso-css.html">⏫</a>
-  <hr>
-  <h2 id="tablas">estilos en las tablas</h2>
-  <article>
-    la propiedad <b>border-collapse</b>, es utlizadas para unir o separar los bordes, <b>collapse</b> unidos o <b>separate</b> separados.<br>
-    <b>:nth-child</b> funcion que nos permite seleccionar una condicion de los objetos hermanos, donde <b>odd</b> son los elementos impares<br>
-    y <b>even</b> son los elementos pares dentro de los registros de una tabla. <br>
-    en ese ejemplo los item paren van ha tener el color verde como se muestra en el siguiente ejemplo: <br>
-    <pre>
-      <code>
-        ejemplo css
-        .tabla-familia tr:nth-child(even){
-          background-color: green;
-        }
-      </code>
-    </pre>
-
-    Tambien se puede utilizar <b>Hover</b> para que cambie de color gris cuando seleccionamos un registro de la tabla.<br>
-    <pre>
-      <code>
-        Ejemplo CSS
-        .tabla-familia tr:hover{
-          background-color: gray;
-        }
-      
-      </code>
-    </pre>
-    ejemplo de <b>:nth-child</b> <br>
-    <pre>
-      <code>
-        .tabla-familia tr:nth-child(even){
-          background-color: green;
-        }
-      </code>
-    </pre>
-  </article>
-  <table class="tabla-familia">
-    <thead>
-      <tr>
-        <th>Nombre</th>
-        <th>parentesco</th>
-        <th>edad</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Rodney Zapata</td>
-        <td>padre</td>
-        <td>47</td>
-      </tr>
-      <tr>
-        <td>Cecilia Cantillo</td>
-        <td>madre</td>
-        <td>34</td>
-      </tr>
-      <tr>
-        <td>Juan Miguel Zapata</td>
-        <td>hijo</td>
-        <td>15</td>
-      </tr>
-      <tr>
-        <td>Samuel David Zapata</td>
-        <td>hijo</td>
-        <td>6</td>
-      </tr>
-
-    </tbody>
-    <tfoot>
-
-    </tfoot>
-  </table>
-
-
-  <a href="curso-css.html">⏫</a>
-  <hr>
-  <h2 id="display">Display</h2>
-  <article>
-    especifica si un elemento es tratado como <b>block</b> ose uno debajo de otro, o <b>Inline</b>, un elemento al lado del otro.<br>
-    y el diseño utilizado para sus hijos, como <b>flow layout</b> (Diseño de flujo), <b>grid</b> (Cuadricula) o <b>flex</b> flexible.<br>
-
-    la propiedad <b>Display</b> establece dos tipos de visualizacion: <b>interna </b> y <b>externa</b> de un elemento. <br>
-    la <b>externa</b> es como se comporta con los otros elementos, y la <b>interna </b> es como se comporta con sus elementos hijos.<br>
-
+    </p>
+  
+    <a href="curso-css.html">⏫</a>
+    <hr>
+    <h2 id="token-git">token Git</h2>
+    <article>
+      Como cada cierto tiempo hay que generar un token hay que ralizar los siguientes pasos: <br>
+      dentro del menu que aparece en la parte superior derecha aparece un mundo con una cruz, <br>
+      escogemos <b>settings</b> y esogemos la ultima opcion <b>Developer settings</b>, <br>
+      por ultimo escogemos <b>Personal access Token</b>, le damos al boton <b>Create new token</b><br>
+      debemos escribir una <b>note</b> un nombre por ejemplo Compaq28082022 para identificar, <br>
+      la maquina de donde se esta actualizando y la fecha de la actualizacion, ahora en <b>Select scope</b>  <br>
+      hay que chulear la opcion <b>repo</b> (full control of private repositories), <br>
+      ojo que si no se chulea esta opcion no funciona el token, por utlimo le datos click al boton, <br>
+      <b>Generate Token</b>
+  
+    </article>
+  
+  
+    <a href="curso-css.html">⏫</a>
+    <hr>
+    <h2 id="metodo-abreviado-code">Metodos abreviados</h2>
+    <p>
+      los siguienes son metodo abreviado de Code studio <br>
+      ! + Tab crea la estructura base de un documento html 5 <br>
+      Ctrl + } Coloca una linea o bloque en comentarios <br>
+      Crl + Enter Inserta una linea en blanco. <br>
+      Alt + Fecha abajo mueve una linea hacia abajo <br>
+      Alt + Fecha Arriba mueve una lina hacia arriba <br>
+      Shit + Alt + Fecha abajo Duplica la linea actual hacia abajo<br>
+  
+  
+    </p>
+  
+    <a href="curso-css.html">⏫</a>
+    <hr>
+    <article id="selectores">
+      <h2>Selectores</h2>
+      existen tres tipos de selectores Básicos: (etiquetas o tipos, identificadores y Clases)
+      las <b>etiquetas</b> son seleccionado por el nombre de los diferentes <b>elementos html</b>, <br>
+      los <b>identificadores</b> hay que seleccionarlos por el atributo <b>id-#</b>,
+      Las <b>Clases</b> hay que seleccionarlas por el atributo <b>. (punto)</b> <br>
+      el <b>selector universal</b> es el <b>* ( asteriscos)</b><br>
+  
+      <h3>Combinador de selectores</h3>
+      se puede dar selecciones de objetos que estan cerca o que sean desendiente de un padre comun, por ejemplo:
+      <b>Selectores de hermanos adyacentes</b> hade referencia a un selector próximo o hermano. solo seleccionará
+  
+      sintaxis:
+      <pre>
+        elemento_anterior + elemento_afectado { estilos }
     
-  </article>
+        li:first-of-type + li {
+            color: red;
+            
+        }
+      </pre>
+  
+      codigo<br>
+      <pre>
+        &lt;ul>
+          &lt;li>Uno&lt;/li>
+          &lt;li>Dos&lt;/li>
+          &lt;li>Tres&lt;/li>
+        &lt;/ul>
+      </pre>
+      <ul>
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+      </ul>
+  
+      <h3>Selectores de hermanos generales</h3>
+      un elemento especifico que esté inmediatamente despues de otro elemento especificado.<br>
+  
+      <b>selector general de hermanos </b> se utliza el simbolo <b>~</b>
+      <pre>
+        Sintaxis: A ~ B
+        Ejemplo: La regla p ~ span se aplicará a todos los elementos &lt;span&gt; que siguen un elemento &lt;p&gt;.
+        p ~ span {
+            color: red;
+        }
+      </pre>
+      <br>
+  
+      <span>Este span no es rojo.</span>
+      <p>Aquí hay un párrafo.</p>
+      <code>Aquí hay algo de código.</code>
+      <span>Aquí hay un span. Es rojo porque va precedido de un párrafo y ambos comparten el mismo padre.</span>
+  
+      <h3>Selectores de hijos</h3>
+      El combinador <b>></b> selecciona los elementos que son hijos directos del primer elemento.
+      <pre>
+        Sintaxis: A > B
+        
+        span { background-color: white; }
+            div > span {
+            background-color: DodgerBlue;
+        }
+        
+      </pre>
+      <div>
+        <span>Span #1, dentro del div.
+          <span>Span #2, dentro del span que está en el div.</span>
+        </span>
+      </div>
+      <span>Span #3, no está dentro del div.</span>
+  
+      <h3>Selectores de descendiente</h3>
+      se utiliza el <b>espacio</b><br>
+      <pre>
+        Sintaxis: A B
+        
+        span { background-color: white; }
+            div span { background-color: DodgerBlue; }
+       
+      </pre>
+      <div>
+        <span>Span 1.
+          <span>Span 2.</span>
+        </span>
+      </div>
+      <span>Span 3.</span>
+  
+    </article>
+  
+    <a href="curso-css.html">⏫</a>
+    <hr>
+    <h2>Bordes (estilos)</h2>
+    <article id="bodes">
+      Es el recuardo o cuadro que embarca un objeto, existen diferentes estilos como son: <br>
+      <b>none, double,groove, dotted, inset, solid, dashed</b><br>
+      donde <b>none</b> es sin bordes, <br>
+      <b>double</b> coloca un recuadro de doble linea, <br>
+      <b>groove</b> ranura, linea delgada <br>
+      <b>dotted</b> punteado, <br>
+      <b>inset</b> inserta un recuadro con el borde izquierdo y superior oscuro en contraste con
+      un border inferior y derecho mas claro.<br>
+      <b>solid</b> es un recuadro totalemente oscuro, linea gruesa, sin ningun tipo de constrate.<br>
+      <b>dashed</b> bordes con guiones, rayado. <br>
+  
+      ejemplo :
+      <h3 id="borde-doble">ejemplo de bordes doble</h3>
+      <pre>
+        Codigo Html:
+  
+        &lt;h3 id="borde-ejemplo1">ejemplo de bordes doble&lt;/h3>
+  
+        Codigo CSS:
+  
+        #borde-ejemplo1{
+          border-style: double;
+        }
+      </pre>
+      es posible combinar varios estilos, como son cutro bodes se colocan en direccion a las manecillas del reloj ose :
+      <br>
+      border superior, derecha, inferior, izquieda. <br>
+  
+      <h3 id="borde-combinado">ejemplo de bordes combinado</h3>
+      <pre>
+        Codigo HTMl:
+        &lt;h3 id="borde-combinado">ejemplo de bordes combinados&lt;/h3>
+  
+        codigo CSS:
+        #borde-combinado{
+          border-style: double dotted solid none;
+        }
+  
+      </pre>
+      Tambien podemos agregarles mas propiedades a los bordes como el color, o el radio de los
+      <h3 id="borde-rendondeados">ejemplo de bordes redondeados, color</h3>
+  
+      <pre>
+        Codigo HTMl:
+        &lt;h3 id="borde-rendondeados">ejemplo de bordes redondeados, color&lt;/h3>
+  
+        codigo CSS:
+        #borde-rendondeados{
+          border-style: solid;
+          border-color: blue;
+          border-radius:5px ;
+          border-width: 5px;
+        }
+      </pre>
+  
+    </article>
+  
+    <a href="curso-css.html">⏫</a>
+    <hr>
+    <h2 id="fondo">fondo</h2>
+    <article>
+      Se puede colocar como fondo un color o una imagen
+    </article>
+    <article id="fondo-color">
+      soy una propiedad de backgroup (fondo)
+    </article>
+    <article id="fondo-imagen">
+      soy una imagen de fondo
+    </article>
+    <div class="margen">
+      margen de linea de texto
+    </div>
+  
+    <a href="curso-css.html">⏫</a>
+    <hr>
+    <h2 id="color-enlace">Color en los enlace</h2>
+    <article>
+      cuando se ha visitado un sitio que tiene un <b>HREF</b>, ya se aun <b>&lt;a&gt;</b> o un <b>&lt;link&gt;</b>, <br>
+      cambia el color del enlace esto lo podemos personalizar con hojas de estilos. <br>
+      por ejemplo si no se ha visitado el enlace que sea de color azul violeta
+      <pre>
+        <code>
+          ejemplo CSS enlace sin visitar
+          a:link{
+            color: blueviolet;
+          }
+        </code>
+      </pre>
+  
+      en caso que se haya visitado el enlace que se coloque de color gris .<br>
+      <pre>
+        <code>
+          ejemplo CSS enlace visitado
+          a:visited{
+            color: gray;
+          }
+        </code>
+      </pre>
+      cuando el usuario se coloca sobre un objeto de enlace, pero sin darle clik cambia el color del objeto a color amarillo verdoso.<br>
+      <pre>
+        <code>
+          ejemplo CSS
+          a:hover{
+            color: yellowgreen;
+          }
+        </code>
+      </pre>
+      si el enlace está activo, que se vea de color rojo. <br>
+      <pre>
+        <code>
+          ejemplo CSS enlace activo
+          a:active{
+            color: red;
+          }
+        </code>
+      </pre>
+  
+      <a href="#">prueba de enlace</a>
+    </article>
+  
+    <a href="curso-css.html">⏫</a>
+    <hr>
+    <h2 id="listas">estilos en las listas</h2>
+    <article>
+      podemos cambiar el estilo a las lista como en el siguiente ejemplo: <br>
+      <pre>
+        <code>
+          ejemplo CSS
+          .list-uno{
+            list-style-type: circle;
+            background-color: white;
+            list-style-position: inside;
+          }
+        </code>
+      </pre>
+    </article>
+    <ul class="list-uno">List 1
+      <li>Uno</li>
+      <li>dos con un texto un poco mas largo para ver como se comporta</li>
+      <li>tres</li>
+    </ul>
+  
+    <ul class="list-dos">List 2
+      <li>Uno</li>
+      <li>dos con un texto un poco mas largo para ver como se comporta</li>
+      <li>tres</li>
+    </ul>
+  
+    <ul class="list-tres">List 3
+      <li>Uno</li>
+      <li>dos con un texto un poco mas largo para ver como se comporta</li>
+      <li>tres</li>
+    </ul>
+  
+  
+    <a href="curso-css.html">⏫</a>
+    <hr>
+    <h2 id="tablas">estilos en las tablas</h2>
+    <article>
+      la propiedad <b>border-collapse</b>, es utlizadas para unir o separar los bordes, <b>collapse</b> unidos o <b>separate</b> separados.<br>
+      <b>:nth-child</b> funcion que nos permite seleccionar una condicion de los objetos hermanos, donde <b>odd</b> son los elementos impares<br>
+      y <b>even</b> son los elementos pares dentro de los registros de una tabla. <br>
+      en ese ejemplo los item paren van ha tener el color verde como se muestra en el siguiente ejemplo: <br>
+      <pre>
+        <code>
+          ejemplo css
+          .tabla-familia tr:nth-child(even){
+            background-color: green;
+          }
+        </code>
+      </pre>
+  
+      Tambien se puede utilizar <b>Hover</b> para que cambie de color gris cuando seleccionamos un registro de la tabla.<br>
+      <pre>
+        <code>
+          Ejemplo CSS
+          .tabla-familia tr:hover{
+            background-color: gray;
+          }
+        
+        </code>
+      </pre>
+      ejemplo de <b>:nth-child</b> <br>
+      <pre>
+        <code>
+          .tabla-familia tr:nth-child(even){
+            background-color: green;
+          }
+        </code>
+      </pre>
+    </article>
+    <table class="tabla-familia">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>parentesco</th>
+          <th>edad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Rodney Zapata</td>
+          <td>padre</td>
+          <td>47</td>
+        </tr>
+        <tr>
+          <td>Cecilia Cantillo</td>
+          <td>madre</td>
+          <td>34</td>
+        </tr>
+        <tr>
+          <td>Juan Miguel Zapata</td>
+          <td>hijo</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>Samuel David Zapata</td>
+          <td>hijo</td>
+          <td>6</td>
+        </tr>
+  
+      </tbody>
+      <tfoot>
+  
+      </tfoot>
+    </table>
+  
+  
+    <a href="curso-css.html">⏫</a>
+    <hr>
+    <h2 id="display">Display</h2>
+    <article>
+      especifica si un elemento es tratado como <b>block</b> ose uno debajo de otro, o <b>Inline</b>, un elemento al lado del otro.<br>
+      y el diseño utilizado para sus hijos, como <b>flow layout</b> (Diseño de flujo), <b>grid</b> (Cuadricula) o <b>flex</b> flexible.<br>
+  
+      la propiedad <b>Display</b> establece dos tipos de visualizacion: <b>interna </b> y <b>externa</b> de un elemento. <br>
+      la <b>externa</b> es como se comporta con los otros elementos, y la <b>interna </b> es como se comporta con sus elementos hijos.<br>
+  
+      
+    </article>
+  
+    <a href="curso-css.html">⏫</a>
+    <hr>
+    <h2 id="flex-box-estilo">Maquetacion estilo Flex Box</h2>
+    <article>
+      Este estilo el primer estilo de maquetado. y todavia se manteniene. existe una pagina recomendada que se llamaba:  <br>
+      <a href="https://css-tricks.com/">CSS trick</a>, es muy pero muy recomendada. <br>
+      Tambien es muy recomendable descargar la libreria <b>CSS Flexbox Cheatsheet</b> desde visual studio Code.  <br>
+      para trabajar se debe utilizar la propiedad <b>display</b>, que puede tener los valor de <b>flex, inline-flex</b>
+      donde <b>flex</b>, funciona en bloque, y <b>inline-flex</b>, ocupa varios en una misma linea.  <br>
+      la propiedad <b>flex-direction</b>, nos indica la direccion en la que aparecen los item: <br>
+      <b>row, row-reverse, column, column-reverse</b>. el <b>row</b> es el valor por defecto y la direccion es de izquierda a derecha, <br>
+      <b>row-reverse,</b> es lo contrario es decir direccion de derecha a izquierda., <b>column</b> tiene la direccion de arriba hacia <br>
+      abajo y <b>column-reverse</b> seria de abajo hacia arriba. <br>
+      propiedad <b>flex-wrap</b>, nos permite distribuir una linea en varias, y pueden ser : <br>
+      <b>nowrap</b> no envolvente, es el valor por defecto, <b>wrap</b> una o mulitiples lineas de arriba hacia abajo, <br>
+      <b>wrap-reverse</b>una o multiples lineas de abajo hacia arriba. <br><br>
+      Existe la propiedad <b>Flex-flow</b> que combina la dos propiedades anteriores (flex-direction y flex-wrap)
+      los valores por defecto son <b>row</b> y <b>nowrap</b> simultaneamente. <br>
+      
+    </article>
+    <a href="curso-css.html">⏫</a>
+    <hr>
+    <h2 id="alinear-espacios">Alinear espacios entre item</h2>
+    <article>
+      Una característica clave de flexbox es la capacidad de alinear y justificar ítems sobre los ejes principal y cruzado,
+       y distribuir el espacio entre los ítems flex. <br>
+       <b>alig-item</b>,  esta propiedad alinea los items sobre el eje cruzado. <br>
+       el valor por defecto es <b>stretch</b>  razón por la cual los ítems se ajustan por defecto a la altura de aquel más alto. <br>
+       tambien puede tener los valor <b>flex-start, flex-end, center</b>, donde se alineas los item al comienzo, al final o centrado, <br>
+       con respecto al contenedor. <br>
+       <b>justify-content</b>, define la alineacion de los item hijos. <br>
 
-  <a href="curso-css.html">⏫</a>
-  <hr>
-  <h2 id="grilla">Grilla</h2>
-  <article>
-    la grilla o Grid se arma usando <b>Div</b> y se combina con la propiedad <b>Display=Grid</b><br>
-    con la propiedad <b>grid-template-columns:</b> podemos establecer el tamaño de las columnas, en este caso serian 3 columnas <br>
-    de tamaño 60px 120px 30px, es caso que el contenido del texto no cabe en el tamaño de la columna asignada se recorta el contenido del texto. <br>
-    <b>grid-template-rows:20px ;</b> estable un alto de la linea de 20 pixeles. Tambien se puede utlizar <b>fr</b> que seria fracccion,<br>
-    por ejemplo que la segunda columna sea el doble de tamaño de la primera y la tercera sea tres veces mas ancha que la primera, asi: <br>
-    <b>grid-template-columns: 1fr 2fr 3fr;</b> en caso que queramos que las 3 columnas sean del mismo ancho se puede utiliar la propiedad <br>
-    <b>Repeat</b> de la siguiente manera: <b>grid-template-columns: repeat(3, 1fr);</b>
-    <pre>
-      <code>
-        .grilla{
-          display: grid;
-          grid-template-columns: 60px 120px 30px;
-          grid-template-rows:20px ;
-        }
-        .element{
-          background-color: aqua;
-        }
+       
+
+    </article>
+
+    <a href="curso-css.html">⏫</a>
+    <hr>
+    <h2 id="grilla-estilo">Grilla</h2>
+    <article>
+      La grilla complementa al estilo de programacion de antes que se llamaba <b>Flex box. A partir del 2014 </b><br>
+      la grilla o Grid se arma usando <b>Div</b> y se combina con la propiedad <b>Display=Grid</b><br>
+      con la propiedad <b>grid-template-columns:</b> podemos establecer el tamaño de las columnas, en este caso serian 3 columnas <br>
+      de tamaño 60px 120px 30px, es caso que el contenido del texto no cabe en el tamaño de la columna asignada se recorta el contenido del texto. <br>
+      <b>grid-template-rows:20px ;</b> estable un alto de la linea de 20 pixeles. Tambien se puede utlizar <b>fr</b> que seria fracccion,<br>
+      por ejemplo que la segunda columna sea el doble de tamaño de la primera y la tercera sea tres veces mas ancha que la primera, asi: <br>
+      <b>grid-template-columns: 1fr 2fr 3fr;</b> en caso que queramos que las 3 columnas sean del mismo ancho se puede utiliar la propiedad <br>
+      <b>Repeat</b> de la siguiente manera: <b>grid-template-columns: repeat(3, 1fr);</b>
+      <pre>
+        <code>
+          .grilla{
+            display: grid;
+            grid-template-columns: 60px 120px 30px;
+            grid-template-rows:20px ;
+          }
+          .element{
+            background-color: aqua;
+          }
+        
+  
+          &lt;div class="grilla">
+            &lt;div class="element">AAAAA&lt;/div>
+            &lt;div class="element">B&lt;/div>
+            &lt;div class="element">C&lt;/div>
+            &lt;div class="element">D&lt;/div>
+            &lt;div class="element">E&lt;/div>
+            &lt;div class="element">F&lt;/div>
+          &lt;/div>
+        
+        </code>
+      </pre>    
+     
+    </article>
+    <div class="grilla">
+      <div class="element">AAAAA</div>
+      <div class="element">B</div>
+      <div class="element">C</div>
+      <div class="element">D</div>
+      <div class="element">E</div>
+      <div class="element">F</div>
+    </div>
+    <article>
+      si quermos profundizar sobre el <b>Grid</b> existe un curso completo sobre el manejo de los grid. <br>
+      <a href="https://www.youtube.com/watch?v=gCox2CqYvto&list=PLvq-jIkSeTUY628cyd9LVbXSXi2xG9mUl" target="_blank"> Grid Jonathan Mircha</a><br>
       
 
-        &lt;div class="grilla">
-          &lt;div class="element">AAAAA&lt;/div>
-          &lt;div class="element">B&lt;/div>
-          &lt;div class="element">C&lt;/div>
-          &lt;div class="element">D&lt;/div>
-          &lt;div class="element">E&lt;/div>
-          &lt;div class="element">F&lt;/div>
-        &lt;/div>
-      
-      </code>
-    </pre>    
-  </article>
-  <div class="grilla">
-    <div class="element">AAAAA</div>
-    <div class="element">B</div>
-    <div class="element">C</div>
-    <div class="element">D</div>
-    <div class="element">E</div>
-    <div class="element">F</div>
-  </div>
+    </article>
+
+
+  </section>
 
 </body>
 
