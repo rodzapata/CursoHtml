@@ -30,7 +30,7 @@
       <li><a href="#flex-box-estilo">maquetacion Estilo Flex Box</a></li>
       <li><a href="#grilla-estilo">maquetacion Grilla</a></li>
       <li><a href="#alinear-espacios">alinear espacios entre item</a></li>
-
+      <li><a href="#trabajando-item">Trabajando con item</a></li>
       
     </ui>
   
@@ -436,9 +436,11 @@
       <b>row, row-reverse, column, column-reverse</b>. el <b>row</b> es el valor por defecto y la direccion es de izquierda a derecha, <br>
       <b>row-reverse,</b> es lo contrario es decir direccion de derecha a izquierda., <b>column</b> tiene la direccion de arriba hacia <br>
       abajo y <b>column-reverse</b> seria de abajo hacia arriba. <br>
+
       propiedad <b>flex-wrap</b>, nos permite distribuir una linea en varias, y pueden ser : <br>
       <b>nowrap</b> no envolvente, es el valor por defecto, <b>wrap</b> una o mulitiples lineas de arriba hacia abajo, <br>
       <b>wrap-reverse</b>una o multiples lineas de abajo hacia arriba. <br><br>
+
       Existe la propiedad <b>Flex-flow</b> que combina la dos propiedades anteriores (flex-direction y flex-wrap)
       los valores por defecto son <b>row</b> y <b>nowrap</b> simultaneamente. <br>
       
@@ -449,13 +451,35 @@
     <article>
       Una característica clave de flexbox es la capacidad de alinear y justificar ítems sobre los ejes principal y cruzado,
        y distribuir el espacio entre los ítems flex. <br>
-       <b>alig-item</b>,  esta propiedad alinea los items sobre el eje cruzado. <br>
+
+       <b>justify-content</b>, define la alineacion de los item hijos. <br>
+       sus valores son: <b>center, flex-start,flex-end, space-between, space-arroud, space evenly. </b>
+       Esta propieda alinea los elemento en el eje X, por lo tanto para que se note los cambios, hay que tener la propiedad <br>
+       <b>flex-direction</b> en filas (row) y <b>flex-wrap</b> como <b>wrap</b> para que ocupe una o mas lineas.  <br>
+
+       <b>alig-item</b>,  esta propiedad alinea los items sobre el eje cruzado osea el eje de las Y. <br>
        el valor por defecto es <b>stretch</b>  razón por la cual los ítems se ajustan por defecto a la altura de aquel más alto. <br>
        tambien puede tener los valor <b>flex-start, flex-end, center</b>, donde se alineas los item al comienzo, al final o centrado, <br>
        con respecto al contenedor. <br>
-       <b>justify-content</b>, define la alineacion de los item hijos. <br>
-
+       Para poder trabajar con esta propiedad tenemos que tener el contenedor en columnas, osea <b>flex-direction=column</b>
+       y <b>flex-wrap=wrap</b>
        
+       para que los item de los hijos se alarguen con respecto al contenedor, deber tener un tamaño ya se en alto o en ancho. <br>
+       si los item estan alineado en columnas, el contenedor tiene que tener un alto <b>height</b> y si esta alineado a en fila, <br>
+       el contenedor debe tener un ancho. <b>width</b>. <br>
+
+    </article>
+
+    <a href="curso-css.html">⏫</a>
+    <hr>
+    <h2 id="trabajando-item">trabajando con item</h2>
+    <article>
+      se pudede colocar un orden a las diferentes capas idenpendientemente del orden en que se haya creado el html. <br>
+      la propiedad se llama <b>order</b>
+      la propiedad <b>flex-grow</b>  especifica el tamaño que puede crecer un item con respecto a los demas. <br>
+      la propiedad <b>flex-shrink</b> es la opuesta a a la anterior y nos indica cuanto puede decrecer un item <br>
+      mientras el numero de flex-shrink sea mas alto se puede encoger mas. <br>
+      la propiedad  <b>flex-basic</b> especifica el tamaño inicial de un item flexible. 
 
     </article>
 
