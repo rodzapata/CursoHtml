@@ -1,0 +1,25 @@
+body{
+    font-family: sans-serif;
+}
+.verb{
+    background-color: rgb(47, 255, 82);
+}
+.noun{
+    background-color: yellow;
+}
+.preposition{
+    background-color: aqua;
+}
+.adverb{
+    /* background-color: darkorchid; */
+    background-color:hotpink ;
+}
+.adjetive{
+    background-color:orange;
+}   
+.pronoun{
+    background-color:lightgreen;
+}
+.modal_verb{
+    background-color:olive;
+}
