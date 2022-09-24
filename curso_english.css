@@ -23,3 +23,9 @@ body{
 .modal_verb{
     background-color:olive;
 }
+.stress{
+    text-decoration: underline crimson;
+}
+.conj{
+    background-color:darkgray;
+}
