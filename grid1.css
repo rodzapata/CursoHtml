@@ -1,0 +1,8 @@
+.grilla{
+    display: grid;
+    grid-template-columns: 60px 100px 180px;
+    grid-template-rows: repeat(3, 100px);
+}
+.element{
+    background-color: orangered;
+}

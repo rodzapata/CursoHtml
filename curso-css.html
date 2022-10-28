@@ -31,13 +31,13 @@
       <li><a href="#grilla-estilo">maquetacion Grilla</a></li>
       <li><a href="#alinear-espacios">alinear espacios entre item</a></li>
       <li><a href="#trabajando-item">Trabajando con item</a></li>
-      
+
     </ui>
-  
+
     <a href="curso-css.html">⏫</a>
     <hr>
     <h2 id="referencia">Referencias</h2>
-  
+
     <p>
       La pagina donde podemos encontrar la documentacion oficial es
       <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">MDN Web Docs</a><br>
@@ -50,10 +50,12 @@
       la pagina para aprender buenas practicas es :
       <a href="https://codeguide.co/" target="_blank">https://codeguide.co/</a> <br>
       Esta paginas nos guia de como crear buen codigo tanto HTML como CSS. <br>
-      Master en CSS <a href="https://www.youtube.com/watch?v=zPLNe3cDP8g&list=PLBdkl5-ytBTy0eedUcQ6t8Q8M5clbxLh-">Master CSS</a><br>
-      
+      Master en CSS <a href="https://www.youtube.com/watch?v=zPLNe3cDP8g&list=PLBdkl5-ytBTy0eedUcQ6t8Q8M5clbxLh-">Master
+        CSS</a><br>
+      Esta pagina es buenisima para practicar html y css <a href="https://htmlcheatsheet.com/css/">https://htmlcheatsheet.com</a>
+
     </p>
-  
+
     <a href="curso-css.html">⏫</a>
     <hr>
     <h2 id="token-git">token Git</h2>
@@ -63,14 +65,14 @@
       escogemos <b>settings</b> y esogemos la ultima opcion <b>Developer settings</b>, <br>
       por ultimo escogemos <b>Personal access Token</b>, le damos al boton <b>Create new token</b><br>
       debemos escribir una <b>note</b> un nombre por ejemplo Compaq28082022 para identificar, <br>
-      la maquina de donde se esta actualizando y la fecha de la actualizacion, ahora en <b>Select scope</b>  <br>
+      la maquina de donde se esta actualizando y la fecha de la actualizacion, ahora en <b>Select scope</b> <br>
       hay que chulear la opcion <b>repo</b> (full control of private repositories), <br>
       ojo que si no se chulea esta opcion no funciona el token, por utlimo le datos click al boton, <br>
       <b>Generate Token</b>
-  
+
     </article>
-  
-  
+
+
     <a href="curso-css.html">⏫</a>
     <hr>
     <h2 id="metodo-abreviado-code">Metodos abreviados</h2>
@@ -82,10 +84,10 @@
       Alt + Fecha abajo mueve una linea hacia abajo <br>
       Alt + Fecha Arriba mueve una lina hacia arriba <br>
       Shit + Alt + Fecha abajo Duplica la linea actual hacia abajo<br>
-  
-  
+
+
     </p>
-  
+
     <a href="curso-css.html">⏫</a>
     <hr>
     <article id="selectores">
@@ -95,11 +97,11 @@
       los <b>identificadores</b> hay que seleccionarlos por el atributo <b>id-#</b>,
       Las <b>Clases</b> hay que seleccionarlas por el atributo <b>. (punto)</b> <br>
       el <b>selector universal</b> es el <b>* ( asteriscos)</b><br>
-  
+
       <h3>Combinador de selectores</h3>
       se puede dar selecciones de objetos que estan cerca o que sean desendiente de un padre comun, por ejemplo:
       <b>Selectores de hermanos adyacentes</b> hade referencia a un selector próximo o hermano. solo seleccionará
-  
+
       sintaxis:
       <pre>
         elemento_anterior + elemento_afectado { estilos }
@@ -109,7 +111,7 @@
             
         }
       </pre>
-  
+
       codigo<br>
       <pre>
         &lt;ul>
@@ -123,10 +125,10 @@
         <li>Dos</li>
         <li>Tres</li>
       </ul>
-  
+
       <h3>Selectores de hermanos generales</h3>
       un elemento especifico que esté inmediatamente despues de otro elemento especificado.<br>
-  
+
       <b>selector general de hermanos </b> se utliza el simbolo <b>~</b>
       <pre>
         Sintaxis: A ~ B
@@ -136,12 +138,12 @@
         }
       </pre>
       <br>
-  
+
       <span>Este span no es rojo.</span>
       <p>Aquí hay un párrafo.</p>
       <code>Aquí hay algo de código.</code>
       <span>Aquí hay un span. Es rojo porque va precedido de un párrafo y ambos comparten el mismo padre.</span>
-  
+
       <h3>Selectores de hijos</h3>
       El combinador <b>></b> selecciona los elementos que son hijos directos del primer elemento.
       <pre>
@@ -159,7 +161,7 @@
         </span>
       </div>
       <span>Span #3, no está dentro del div.</span>
-  
+
       <h3>Selectores de descendiente</h3>
       se utiliza el <b>espacio</b><br>
       <pre>
@@ -175,9 +177,9 @@
         </span>
       </div>
       <span>Span 3.</span>
-  
+
     </article>
-  
+
     <a href="curso-css.html">⏫</a>
     <hr>
     <h2>Bordes (estilos)</h2>
@@ -192,7 +194,7 @@
       un border inferior y derecho mas claro.<br>
       <b>solid</b> es un recuadro totalemente oscuro, linea gruesa, sin ningun tipo de constrate.<br>
       <b>dashed</b> bordes con guiones, rayado. <br>
-  
+
       ejemplo :
       <h3 id="borde-doble">ejemplo de bordes doble</h3>
       <pre>
@@ -209,7 +211,7 @@
       es posible combinar varios estilos, como son cutro bodes se colocan en direccion a las manecillas del reloj ose :
       <br>
       border superior, derecha, inferior, izquieda. <br>
-  
+
       <h3 id="borde-combinado">ejemplo de bordes combinado</h3>
       <pre>
         Codigo HTMl:
@@ -223,7 +225,7 @@
       </pre>
       Tambien podemos agregarles mas propiedades a los bordes como el color, o el radio de los
       <h3 id="borde-rendondeados">ejemplo de bordes redondeados, color</h3>
-  
+
       <pre>
         Codigo HTMl:
         &lt;h3 id="borde-rendondeados">ejemplo de bordes redondeados, color&lt;/h3>
@@ -236,9 +238,9 @@
           border-width: 5px;
         }
       </pre>
-  
+
     </article>
-  
+
     <a href="curso-css.html">⏫</a>
     <hr>
     <h2 id="fondo">fondo</h2>
@@ -254,7 +256,7 @@
     <div class="margen">
       margen de linea de texto
     </div>
-  
+
     <a href="curso-css.html">⏫</a>
     <hr>
     <h2 id="color-enlace">Color en los enlace</h2>
@@ -270,7 +272,7 @@
           }
         </code>
       </pre>
-  
+
       en caso que se haya visitado el enlace que se coloque de color gris .<br>
       <pre>
         <code>
@@ -280,7 +282,8 @@
           }
         </code>
       </pre>
-      cuando el usuario se coloca sobre un objeto de enlace, pero sin darle clik cambia el color del objeto a color amarillo verdoso.<br>
+      cuando el usuario se coloca sobre un objeto de enlace, pero sin darle clik cambia el color del objeto a color
+      amarillo verdoso.<br>
       <pre>
         <code>
           ejemplo CSS
@@ -298,10 +301,10 @@
           }
         </code>
       </pre>
-  
+
       <a href="#">prueba de enlace</a>
     </article>
-  
+
     <a href="curso-css.html">⏫</a>
     <hr>
     <h2 id="listas">estilos en las listas</h2>
@@ -323,26 +326,28 @@
       <li>dos con un texto un poco mas largo para ver como se comporta</li>
       <li>tres</li>
     </ul>
-  
+
     <ul class="list-dos">List 2
       <li>Uno</li>
       <li>dos con un texto un poco mas largo para ver como se comporta</li>
       <li>tres</li>
     </ul>
-  
+
     <ul class="list-tres">List 3
       <li>Uno</li>
       <li>dos con un texto un poco mas largo para ver como se comporta</li>
       <li>tres</li>
     </ul>
-  
-  
+
+
     <a href="curso-css.html">⏫</a>
     <hr>
     <h2 id="tablas">estilos en las tablas</h2>
     <article>
-      la propiedad <b>border-collapse</b>, es utlizadas para unir o separar los bordes, <b>collapse</b> unidos o <b>separate</b> separados.<br>
-      <b>:nth-child</b> funcion que nos permite seleccionar una condicion de los objetos hermanos, donde <b>odd</b> son los elementos impares<br>
+      la propiedad <b>border-collapse</b>, es utlizadas para unir o separar los bordes, <b>collapse</b> unidos o
+      <b>separate</b> separados.<br>
+      <b>:nth-child</b> funcion que nos permite seleccionar una condicion de los objetos hermanos, donde <b>odd</b> son
+      los elementos impares<br>
       y <b>even</b> son los elementos pares dentro de los registros de una tabla. <br>
       en ese ejemplo los item paren van ha tener el color verde como se muestra en el siguiente ejemplo: <br>
       <pre>
@@ -353,8 +358,9 @@
           }
         </code>
       </pre>
-  
-      Tambien se puede utilizar <b>Hover</b> para que cambie de color gris cuando seleccionamos un registro de la tabla.<br>
+
+      Tambien se puede utilizar <b>Hover</b> para que cambie de color gris cuando seleccionamos un registro de la
+      tabla.<br>
       <pre>
         <code>
           Ejemplo CSS
@@ -402,71 +408,128 @@
           <td>hijo</td>
           <td>6</td>
         </tr>
-  
+
       </tbody>
       <tfoot>
-  
+
       </tfoot>
     </table>
-  
-  
+
+
     <a href="curso-css.html">⏫</a>
     <hr>
     <h2 id="display">Display</h2>
     <article>
-      especifica si un elemento es tratado como <b>block</b> ose uno debajo de otro, o <b>Inline</b>, un elemento al lado del otro.<br>
-      y el diseño utilizado para sus hijos, como <b>flow layout</b> (Diseño de flujo), <b>grid</b> (Cuadricula) o <b>flex</b> flexible.<br>
-  
-      la propiedad <b>Display</b> establece dos tipos de visualizacion: <b>interna </b> y <b>externa</b> de un elemento. <br>
-      la <b>externa</b> es como se comporta con los otros elementos, y la <b>interna </b> es como se comporta con sus elementos hijos.<br>
-  
-      
+      especifica si un elemento es tratado como <b>block</b> ose uno debajo de otro, o <b>Inline</b>, un elemento al
+      lado del otro.<br>
+      y el diseño utilizado para sus hijos, como <b>flow layout</b> (Diseño de flujo), <b>grid</b> (Cuadricula) o
+      <b>flex</b> flexible.<br>
+
+      la propiedad <b>Display</b> establece dos tipos de visualizacion: <b>interna </b> y <b>externa</b> de un elemento.
+      <br>
+      la <b>externa</b> es como se comporta con los otros elementos, y la <b>interna </b> es como se comporta con sus
+      elementos hijos.<br>
+
+      A los elementos se les puede dar un ancho maximo con la propiedad <b>max-with</b> y tambien se le puede establecer
+      una posicion. <br>
+      la <b>position</b> puede tener los siguientes valores: <b>static, relative, absolute, fixed</b>
+
+      <pre>
+        <code>
+          ejemplo css
+          .parrafo-fijo{
+            background-color: aqua;
+            position: fixed;
+            max-width: 344px;
+            left: 25px;
+            top: -15px;
+          }
+        </code>
+      </pre>
+
+      <p class="parrafo-fijo">Soy un parrafo, y permanesco anclado en la misma posicion</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro repellendus provident voluptatem sed cumque
+        ipsum eveniet nulla laborum delectus aliquam quas voluptates,
+        culpa dolor harum quis itaque labore quo hic.</p>
+
+      <p>para finalizar existe la propiedad <b>overflow</b> que muestra la informacion que cabe en un elemento</p>
+      <p>
+        sus valores son <b>visible, hidden, scroll, auto</b> el valor por defecto es visible, pero si al objeto le damos
+        un ancho y un alto y la informacion almacenada no cabe en el espacio entonces hay que establecer como se
+        desborda.
+      </p>
+
+      <pre>
+        <code>
+          ejemplo css
+          #texto-cuadrado{
+            width: 100px;
+            height: 100px;
+            overflow: scroll;
+          }
+        </code>
+      </pre>
+
+      <p class id="texto-cuadrado">
+        prueba de un texto que no cabe en el tamaño estipulado, por eso se desborda
+      </p>
     </article>
-  
+
     <a href="curso-css.html">⏫</a>
     <hr>
     <h2 id="flex-box-estilo">Maquetacion estilo Flex Box</h2>
     <article>
-      Este estilo el primer estilo de maquetado. y todavia se manteniene. existe una pagina recomendada que se llamaba:  <br>
+      Este estilo el primer estilo de maquetado. y todavia se manteniene. existe una pagina recomendada que se llamaba:
+      <br>
       <a href="https://css-tricks.com/">CSS trick</a>, es muy pero muy recomendada. <br>
-      Tambien es muy recomendable descargar la libreria <b>CSS Flexbox Cheatsheet</b> desde visual studio Code.  <br>
+      Tambien es muy recomendable descargar la libreria <b>CSS Flexbox Cheatsheet</b> desde visual studio Code. <br>
       para trabajar se debe utilizar la propiedad <b>display</b>, que puede tener los valor de <b>flex, inline-flex</b>
-      donde <b>flex</b>, funciona en bloque, y <b>inline-flex</b>, ocupa varios en una misma linea.  <br>
+      donde <b>flex</b>, funciona en bloque, y <b>inline-flex</b>, ocupa varios en una misma linea. <br>
       la propiedad <b>flex-direction</b>, nos indica la direccion en la que aparecen los item: <br>
-      <b>row, row-reverse, column, column-reverse</b>. el <b>row</b> es el valor por defecto y la direccion es de izquierda a derecha, <br>
-      <b>row-reverse,</b> es lo contrario es decir direccion de derecha a izquierda., <b>column</b> tiene la direccion de arriba hacia <br>
+      <b>row, row-reverse, column, column-reverse</b>. el <b>row</b> es el valor por defecto y la direccion es de
+      izquierda a derecha, <br>
+      <b>row-reverse,</b> es lo contrario es decir direccion de derecha a izquierda., <b>column</b> tiene la direccion
+      de arriba hacia <br>
       abajo y <b>column-reverse</b> seria de abajo hacia arriba. <br>
 
       propiedad <b>flex-wrap</b>, nos permite distribuir una linea en varias, y pueden ser : <br>
-      <b>nowrap</b> no envolvente, es el valor por defecto, <b>wrap</b> una o mulitiples lineas de arriba hacia abajo, <br>
+      <b>nowrap</b> no envolvente, es el valor por defecto, <b>wrap</b> una o mulitiples lineas de arriba hacia abajo,
+      <br>
       <b>wrap-reverse</b>una o multiples lineas de abajo hacia arriba. <br><br>
 
       Existe la propiedad <b>Flex-flow</b> que combina la dos propiedades anteriores (flex-direction y flex-wrap)
       los valores por defecto son <b>row</b> y <b>nowrap</b> simultaneamente. <br>
-      
+
     </article>
     <a href="curso-css.html">⏫</a>
     <hr>
     <h2 id="alinear-espacios">Alinear espacios entre item</h2>
     <article>
-      Una característica clave de flexbox es la capacidad de alinear y justificar ítems sobre los ejes principal y cruzado,
-       y distribuir el espacio entre los ítems flex. <br>
+      Una característica clave de flexbox es la capacidad de alinear y justificar ítems sobre los ejes principal y
+      cruzado,
+      y distribuir el espacio entre los ítems flex. <br>
 
-       <b>justify-content</b>, define la alineacion de los item hijos. <br>
-       sus valores son: <b>center, flex-start,flex-end, space-between, space-arroud, space evenly. </b>
-       Esta propieda alinea los elemento en el eje X, por lo tanto para que se note los cambios, hay que tener la propiedad <br>
-       <b>flex-direction</b> en filas (row) y <b>flex-wrap</b> como <b>wrap</b> para que ocupe una o mas lineas.  <br>
+      <b>justify-content</b>, define la alineacion de los item hijos. <br>
+      sus valores son: <b>center, flex-start,flex-end, space-between, space-arroud, space evenly. </b>
+      Esta propieda alinea los elemento en el eje X, por lo tanto para que se note los cambios, hay que tener la
+      propiedad <br>
+      <b>flex-direction</b> en filas (row) y <b>flex-wrap</b> como <b>wrap</b> para que ocupe una o mas lineas. <br>
 
-       <b>alig-item</b>,  esta propiedad alinea los items sobre el eje cruzado osea el eje de las Y. <br>
-       el valor por defecto es <b>stretch</b>  razón por la cual los ítems se ajustan por defecto a la altura de aquel más alto. <br>
-       tambien puede tener los valor <b>flex-start, flex-end, center</b>, donde se alineas los item al comienzo, al final o centrado, <br>
-       con respecto al contenedor. <br>
-       Para poder trabajar con esta propiedad tenemos que tener el contenedor en columnas, osea <b>flex-direction=column</b>
-       y <b>flex-wrap=wrap</b>
-       
-       para que los item de los hijos se alarguen con respecto al contenedor, deber tener un tamaño ya se en alto o en ancho. <br>
-       si los item estan alineado en columnas, el contenedor tiene que tener un alto <b>height</b> y si esta alineado a en fila, <br>
-       el contenedor debe tener un ancho. <b>width</b>. <br>
+      <b>alig-item</b>, esta propiedad alinea los items sobre el eje cruzado osea el eje de las Y. <br>
+      el valor por defecto es <b>stretch</b> razón por la cual los ítems se ajustan por defecto a la altura de aquel más
+      alto. <br>
+      tambien puede tener los valor <b>flex-start, flex-end, center</b>, donde se alineas los item al comienzo, al final
+      o centrado, <br>
+      con respecto al contenedor. <br>
+      Para poder trabajar con esta propiedad tenemos que tener el contenedor en columnas, osea
+      <b>flex-direction=column</b>
+      y <b>flex-wrap=wrap</b>
+
+      para que los item de los hijos se alarguen con respecto al contenedor, deber tener un tamaño ya se en alto o en
+      ancho. <br>
+      si los item estan alineado en columnas, el contenedor tiene que tener un alto <b>height</b> y si esta alineado a
+      en fila, <br>
+      el contenedor debe tener un ancho. <b>width</b>. <br>
 
     </article>
 
@@ -476,10 +539,10 @@
     <article>
       se pudede colocar un orden a las diferentes capas idenpendientemente del orden en que se haya creado el html. <br>
       la propiedad se llama <b>order</b>
-      la propiedad <b>flex-grow</b>  especifica el tamaño que puede crecer un item con respecto a los demas. <br>
+      la propiedad <b>flex-grow</b> especifica el tamaño que puede crecer un item con respecto a los demas. <br>
       la propiedad <b>flex-shrink</b> es la opuesta a a la anterior y nos indica cuanto puede decrecer un item <br>
       mientras el numero de flex-shrink sea mas alto se puede encoger mas. <br>
-      la propiedad  <b>flex-basic</b> especifica el tamaño inicial de un item flexible. 
+      la propiedad <b>flex-basic</b> especifica el tamaño inicial de un item flexible.
 
     </article>
 
@@ -489,18 +552,32 @@
     <article>
       La grilla complementa al estilo de programacion de antes que se llamaba <b>Flex box. A partir del 2014 </b><br>
       la grilla o Grid se arma usando <b>Div</b> y se combina con la propiedad <b>Display=Grid</b><br>
-      con la propiedad <b>grid-template-columns:</b> podemos establecer el tamaño de las columnas, en este caso serian 3 columnas <br>
-      de tamaño 60px 120px 30px, es caso que el contenido del texto no cabe en el tamaño de la columna asignada se recorta el contenido del texto. <br>
-      <b>grid-template-rows:20px ;</b> estable un alto de la linea de 20 pixeles. Tambien se puede utlizar <b>fr</b> que seria fracccion,<br>
-      por ejemplo que la segunda columna sea el doble de tamaño de la primera y la tercera sea tres veces mas ancha que la primera, asi: <br>
-      <b>grid-template-columns: 1fr 2fr 3fr;</b> en caso que queramos que las 3 columnas sean del mismo ancho se puede utiliar la propiedad <br>
-      <b>Repeat</b> de la siguiente manera: <b>grid-template-columns: repeat(3, 1fr);</b>
+      con la propiedad <b>grid-template-columns:</b> podemos establecer el tamaño de las columnas, en este caso serian 3
+      columnas <br>
+      de tamaño 60px 120px 30px, es caso que el contenido del texto no cabe en el tamaño de la columna asignada se
+      recorta el contenido del texto. <br>
+      <b>grid-template-rows:20px ;</b> estable un alto de la linea de 20 pixeles. Tambien se puede utlizar <b>fr</b> que
+      seria fracccion,<br>
+      por ejemplo que la segunda columna sea el doble de tamaño de la primera y la tercera sea tres veces mas ancha que
+      la primera, asi: <br>
+      <b>grid-template-columns: 1fr 2fr 3fr;</b> en caso que queramos que las 3 columnas sean del mismo ancho se puede
+      utiliar la propiedad <br>
+      <b>Repeat</b> de la siguiente manera: <b>grid-template-columns: repeat(3, 1fr);</b> <br>
+      Tambien se puede establecer el tamaño mínimo y máximo de una columna o una fila con la funcion <b>minmax()</b>
+      <br>
+      por ejemplo podemos decir que una columna tenga de tamaño como minimo 50px y maximo 230px
+      quedando el codigo asi: <br>
+
       <pre>
         <code>
           .grilla{
             display: grid;
             grid-template-columns: 60px 120px 30px;
+            grid-template-columns: minmax(50px, 230px);
             grid-template-rows:20px ;
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+       
           }
           .element{
             background-color: aqua;
@@ -517,21 +594,114 @@
           &lt;/div>
         
         </code>
-      </pre>    
-     
+      </pre>
+
+      <div class="grilla">
+        <div class="element">AAAAA</div>
+        <div class="element">B</div>
+        <div class="element">C</div>
+        <div class="element">D</div>
+        <div class="element">E</div>
+        <div class="element">F</div>
+      </div>
+
     </article>
-    <div class="grilla">
-      <div class="element">AAAAA</div>
-      <div class="element">B</div>
-      <div class="element">C</div>
-      <div class="element">D</div>
-      <div class="element">E</div>
-      <div class="element">F</div>
-    </div>
     <article>
-      si quermos profundizar sobre el <b>Grid</b> existe un curso completo sobre el manejo de los grid. <br>
-      <a href="https://www.youtube.com/watch?v=gCox2CqYvto&list=PLvq-jIkSeTUY628cyd9LVbXSXi2xG9mUl" target="_blank"> Grid Jonathan Mircha</a><br>
+
+      <b>Brechas</b> son las lineas de espacio que hay entre las filas de una grilla,por ejemplo ahora vamos a colocar
+      Una
+      brecha de 15px, para realizar esto necesitamos la propiedad <b>grid-row-gap</b>, y el espacio estre columnas se
+      utiliza <br>
+      la propiedad <b>grid-column-gap</b> y tambien lo vamos a poner en 15px, <br>
+      Es importante resaltar que existe una propiedad llamada <b>grid-gap</b> que agrupa las dos propiedades anteriores
+      , donde
+      el primer valor es el espacio entre las filas y el segundo es el espacio entre las columnas. <br>
+
+      Expandir filas y columnas, por ejemplo podemos decir que la primera fila ocupe 2 columnas, para esto necesitamos
+      las propiedades <b>grid-column-start</b> y <b>grid-column-end</b>. <br>/b>
+      <pre>
+      <code>
+        .grilla{
+          display: grid;
+          grid-template-columns: minmax(50px, 230px);
+          grid-template-rows:20px ;
+          grid-gap: 5px 10px;
+        }
+  
+        .header{
+          grid-column-start: 1;
+          grid-column-end: 6;
+      }
+
+
+      &lt;div class="grilla">
+        &lt;div class="element header">AAAAA&lt;/div>
+        &lt;div class="element">B&lt;/div>
+        &lt;div class="element">C&lt;/div>
+        &lt;div class="element">D&lt;/div>
+        &lt;div class="element">E&lt;/div>
+        &lt;div class="element">F&lt;/div>
+      &lt;/div>
+
       
+      </code>
+    </pre>
+
+      <div class="grilla">
+        <div class="element header">AAAAA</div>
+        <div class="element">B</div>
+        <div class="element">C</div>
+        <div class="element">D</div>
+        <div class="element">E</div>
+        <div class="element">F</div>
+      </div>
+    </article>
+    <article>
+      estas dos propiedades se pueden unir usando la
+      propiedad <b>grid-column</b>, donde es primer parametros son las filas y el segundo son las columnas, de igual
+      forma
+      tambien se puede agrupar por filas utilizando la propiedad <b>grid-row</b> <br>
+      <pre>
+  <code>
+    .grilla{
+      display: grid;
+      grid-template-columns: 60px 120px 30px;
+      grid-template-rows:20px 20px ;
+      grid-gap: 5px 10px;
+    }
+
+    .header{
+      grid-column: 1/6;
+      grid-row: 1/3
+    }
+
+  </code>
+</pre>
+    Tabien es posible aignarles nombre a la brecha o lineas de forma general solo hay que colocar el combre entre [] corchetes, <br>
+    y ayudarnos utilizarno la funcion <b>repeat()</b> <br>
+    <pre>
+      <code>
+        .grilla{
+          display: grid;
+          grid-gap: 5px 5px;
+          grid-template-columns: repeat(3, [col-inicio] 1fr [col-fin]);
+          grid-template-rows: repeat(2,[row-inicio] 50px [row-fin]);
+        }
+
+        .header{
+          grid-column: col-inicio / col-fin 3 ;
+          grid-row: row-inicio / row-fin 2;
+        }
+      </code>
+    </pre>
+
+    </article>
+    <article>
+      <br>
+      si quermos profundizar sobre el <b>Grid</b> existe un curso completo sobre el manejo de los grid. <br>
+      <a href="https://www.youtube.com/watch?v=gCox2CqYvto&list=PLvq-jIkSeTUY628cyd9LVbXSXi2xG9mUl" target="_blank">
+        Grid Jonathan Mircha</a><br>
+
 
     </article>
 
