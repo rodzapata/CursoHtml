@@ -13,7 +13,7 @@
 
     <link href="style.css" rel="stylesheet">
     -->
-    <link href="estilos.css" rel="stylesheet">
+  <link href="estilos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -54,15 +54,17 @@
     <li><a href="#formularios-cajas-textos">Cajas de textos</a></li>
     <li><a href="#formulario-textArea">Text Area</a></li>
     <li><a href="#formulario-select">select</a></li>
+    <li><a href="#formulario-input">Tipos de input</a></li>
     <li><a href="#formulario-contactos">formulario de contactos</a></li>
     <li><a href="#data-atributos">Data atributos</a></li>
+    <li><a href="#imagen-svg">Imagenes SVG</a></li>
 
     <h1>Curso CSS </h1>
     <h2>indice de contenido</h2>
     <li><a href="curso-css.html">Curso CSS</a></li>
 
   </ui>
-  
+
   <h2 id="referencia">Pagina de Referencias</h2>
   <p>La pagina donde podemos encontrar la documentacion oficial es
     <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">MDN Web Docs</a><br>
@@ -70,17 +72,22 @@
     <a href="https://youtu.be/-oK6zL01fNM">Jhonatan mircha</a>
     curso de Html y CSS por Jhonatan mircha <br>
     Tambien el curso de deichoi <a href="https://www.youtube.com/watch?v=Y-OhzQpsRwI">HTL5 Y CCS desde cero</a><br>
-    Aprende HTML ahora! curso completo GRATIS desde cero por Nicolas Shulman <a href="https://youtu.be/MJkdaVFHrto">Html</a><br>
-    Esta pagina <a href="https://caniuse.com/">CanIuse</a> nos sirve para conocer las novedades que van apareciendo en Html, <br>
+    Aprende HTML ahora! curso completo GRATIS desde cero por Nicolas Shulman <a
+      href="https://youtu.be/MJkdaVFHrto">Html</a><br>
+    Esta pagina <a href="https://caniuse.com/">CanIuse</a> nos sirve para conocer las novedades que van apareciendo en
+    Html, <br>
     La compatibilidad con los navegadores y todo lo que está en etapa experimental.<br>
-    otra pagina donde encontramos bastantes ejemplos de Html es : 
+    otra pagina donde encontramos bastantes ejemplos de Html es :
     <a href="https://formsubmit.co/">https://formsubmit.co/</a><br>
-    pagina importante donde se explica todo los relacionado con el desarrollo web <a href="https://desarrolloweb.com/">DesarrolloWeb</a> <br>
+    pagina importante donde se explica todo los relacionado con el desarrollo web <a
+      href="https://desarrolloweb.com/">DesarrolloWeb</a> <br>
 
-    si tenemos que utilizar el mayor que y el menor que en las etiquetas y queremo que no presente conflicto con el codigo HTML, <br>
-    Debemos utilizar los simbolos lt;<b>&lt;</b> (less than =menor que) y el simbolo gt;<b>&gt;</b> (greater than= mayor que).<br>
+    si tenemos que utilizar el mayor que y el menor que en las etiquetas y queremo que no presente conflicto con el
+    codigo HTML, <br>
+    Debemos utilizar los simbolos lt;<b>&lt;</b> (less than =menor que) y el simbolo gt;<b>&gt;</b> (greater than= mayor
+    que).<br>
     la palabra <b>semicolon</b> significa punto y coma. <br>
-    <pre>
+  <pre>
       <code>
         lt; es &lt;   less than    debe ir presedida del simbolo & 
         gt; es &gt;   greater than
@@ -97,10 +104,10 @@
     Ctrl + } Coloca una linea o bloque en comentarios <br>
     ! + Tab crea la estructura base de un documento html 5 <br>
 
-    
+
 
   </p>
-  
+
   <a href="curso_html.html">⏫</a>
   <hr>
   <h2 id="etiqueta-doctype">Principales Etiquetas en el HTMl</h2>
@@ -157,7 +164,7 @@
     palabra en <b>negrita</b> en <i>itálica</i> palabra <u>subrayada</u>
     la formula E=m<sup>2</sup> y el agua es H<sub>2</sub>O
     <mark>Marca registrada: </mark><small>Letra pequeña</small>
-    Texto tachado (Strikethrough) <b>s</b>, como por ejemplo <s>esto es texto tachado</s> 
+    Texto tachado (Strikethrough) <b>s</b>, como por ejemplo <s>esto es texto tachado</s>
   </p>
 
   <a href="curso_html.html">⏫</a>
@@ -182,7 +189,8 @@
 
   <a href="curso_html.html">⏫</a>
   <hr>
-  <h2 id="etiqueta-salto">Etiqueta de salto <b>br (Break Rule) salto de linea y Hr (Horizontal Rule) linea horizontal</b></h2>
+  <h2 id="etiqueta-salto">Etiqueta de salto <b>br (Break Rule) salto de linea y Hr (Horizontal Rule) linea
+      horizontal</b></h2>
   <p>
     Estas etiquetas son <b>br</b>, esta genera un salto de linea es como si presionaramo un ENTER, por ejemlo:
     Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Accusamus consequatur repellat atque neque
@@ -196,7 +204,7 @@
   <p>
     (Horizontal Rule)
     etiqueta <b>Hr</b> nos permite representa un cambio de tema entre párrafos
-    (por ejemplo, un cambio de escena en una historia, un cambio de tema en una sección).<br> 
+    (por ejemplo, un cambio de escena en una historia, un cambio de tema en una sección).<br>
     En versiones previas de HTML representaba una línea horizontal.
   </p>
 
@@ -253,15 +261,15 @@
     la etiqueta de bloque por excelencia es <b>Div</b>.<br>
     en cambios las de linea si permite tener otras etiquetas al lado, la mas famosa es la etiqueta <b>Span</b><br>
     esta etiqueta sirve para aplicar estilo a un texto o agrupar elementos en linea.<br>
-    <h3>Ejemplos</h3>
+  <h3>Ejemplos</h3>
   <div style="background-color: yellow">Este es una prueba con Div</div>
   <div>Este es otro Div </div>
   <span style="background-color:yellow">Esta es una prueba con Span</span>
   <span>Esta es otra span</span>
-    <h3>Ejemplo dentro de un <b>span</b> dentro de un parrafo</h3>
-    <p>
-      En este texto queeremos resaltar la palabra <span style="color:red ;">Colombia</span>, que es mi pais
-    </p>
+  <h3>Ejemplo dentro de un <b>span</b> dentro de un parrafo</h3>
+  <p>
+    En este texto queeremos resaltar la palabra <span style="color:red ;">Colombia</span>, que es mi pais
+  </p>
 
   otro elemntos de bloque son: <b>Address, article, aside, audio, canvas, footer, form, hr, main, nav, section,
   </b><br>
@@ -365,8 +373,8 @@
   <p>
     aprenderemos a interactuar los metodos de los objetos llamando a codificacion de JavaScrip. <br>
     por ejemplo en el siguiente ejemplo vincularemos el mentodo <b>onclick</b> del boton con la <br>
-    funcion <b>alert</b> de JavaScript. 
-    <pre>
+    funcion <b>alert</b> de JavaScript.
+  <pre>
       <code>
         &lt;button onclick="alert('Haz click en el boton')"&gt;Este es un boton&lt;/button&gt;
       </code>
@@ -376,7 +384,7 @@
   <p>Otro elemento interactivo seria la famosa acordeon </p>
   <p>
     el codigo seria el siguiente:<br>
-    <pre>
+  <pre>
       <code>
         &lt;details>
           &lt;summary>Titulo de la acordeon</summary>
@@ -395,10 +403,13 @@
     <summary>Titulo de la acordeon</summary>
     <article>
       <h3>Contenido del acordeon</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat quod omnis fugiat quibusdam a expedita non dolorum assumenda vel dicta, numquam pariatur impedit sit soluta alias error vero, accusamus atque.</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat quod omnis fugiat quibusdam a expedita non
+        dolorum assumenda vel dicta, numquam pariatur impedit sit soluta alias error vero, accusamus atque.</p>
       <img src="imagenes/gatos.jpg" width="80" height="40" alt="Gatos">
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat quod omnis fugiat quibusdam a expedita non dolorum assumenda vel dicta, numquam pariatur impedit sit soluta alias error vero, accusamus atque.</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat quod omnis fugiat quibusdam a expedita non dolorum assumenda vel dicta, numquam pariatur impedit sit soluta alias error vero, accusamus atque.</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat quod omnis fugiat quibusdam a expedita non
+        dolorum assumenda vel dicta, numquam pariatur impedit sit soluta alias error vero, accusamus atque.</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat quod omnis fugiat quibusdam a expedita non
+        dolorum assumenda vel dicta, numquam pariatur impedit sit soluta alias error vero, accusamus atque.</p>
     </article>
   </details>
   <p>
@@ -410,7 +421,7 @@
   <dialog open="">
     Esto es una venta modal
   </dialog>
- 
+
   <a href="curso_html.html">⏫</a>
   <hr>
   <h2 id="audio-y-video">Audio y video en Html5 </h2>
@@ -418,46 +429,41 @@
     Anteriormente para poder utilizar audio y video en las paginas web era necesario usar <b>flash</b>, <br>
     a partir del html5 ya lo podemos utilizar de manera nativa con las etiquetas nuevas. <br>
     El codigo seria el siguiente : <br>
-    <pre>
+  <pre>
       <code>
         &lt;audio src="media/Happy_Together.mp3" controls></audio>
       </code>
     </pre>
   </p>
   <audio src="media/Happy_Together.mp3" controls></audio>
-  
+
   <a href="curso_html.html">⏫</a>
   <hr>
   <h2 id="iframe">iframe (inline Frame)</h2>
   <p>
-    El elemento HTML &lt;iframe&gt; (de inline frame) representa un contexto de navegación anidado, 
+    El elemento HTML &lt;iframe&gt; (de inline frame) representa un contexto de navegación anidado,
     el cual permite incrustrar otra página HTML en la página actual.<br>
     Tambien nos permite incrunstar en nuestra pagina archivo pdf, googlo map, videos de youtube, etc
   </p>
-  <iframe id="inlineFrameExample"
-    title="Inline Frame Example"
-    width="300"
-    height="200"
-    src="hola.html">
-</iframe>
-<br>
-<iframe id="inframePDF"
-title="muestra un PDF"
-width="800"
-height="500"
-src="media/pdfcoffee.com_a-smarter-way-to-learn-javascript-pdf-free.pdf">
-</iframe>
-<br>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17810.22685158469!2d175.44769810389585!3d-37.89693959879406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6cfd44bda1d005%3A0x2ff510fc6442a40!2sCambridge%20Coach%20House%20Luxury%20Cottages!5e0!3m2!1ses!2sco!4v1657806729402!5m2!1ses!2sco" 
-  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-<br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6eRkCnFhHRg" 
-  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen>
-</iframe>
-<br>
-<a href="curso_html.html">⏫</a>
+  <iframe id="inlineFrameExample" title="Inline Frame Example" width="300" height="200" src="hola.html">
+  </iframe>
+  <br>
+  <iframe id="inframePDF" title="muestra un PDF" width="800" height="500"
+    src="media/pdfcoffee.com_a-smarter-way-to-learn-javascript-pdf-free.pdf">
+  </iframe>
+  <br>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17810.22685158469!2d175.44769810389585!3d-37.89693959879406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6cfd44bda1d005%3A0x2ff510fc6442a40!2sCambridge%20Coach%20House%20Luxury%20Cottages!5e0!3m2!1ses!2sco!4v1657806729402!5m2!1ses!2sco"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  <br>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/6eRkCnFhHRg" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+  <br>
+  <a href="curso_html.html">⏫</a>
   <hr>
   <h2 id="listas">Listas </h2>
   <p>
@@ -595,7 +601,8 @@ src="media/pdfcoffee.com_a-smarter-way-to-learn-javascript-pdf-free.pdf">
 
   <h3>Tercer ejemplo de tablas</h3>
   <article>
-    en el segundo item uniremos la primera y la segunda columna utilizando la propiedad <b>colspan</b>, para esto le decimos a la <br>
+    en el segundo item uniremos la primera y la segunda columna utilizando la propiedad <b>colspan</b>, para esto le
+    decimos a la <br>
     columna una que va a utilizar 2 columnas de la siguiente forma: <br>
     <pre>
       <code>
@@ -627,25 +634,25 @@ src="media/pdfcoffee.com_a-smarter-way-to-learn-javascript-pdf-free.pdf">
   </article>
   <table>
     <thead>
-        <tr>
-            <th>Campo 1</th>
-            <th>Campo 2</th>
-            <th>Campo 3</th>
-        </tr>
+      <tr>
+        <th>Campo 1</th>
+        <th>Campo 2</th>
+        <th>Campo 3</th>
+      </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>Valor 1</td>
-            <td>Valor 2</td>
-            <td>Valor 3</td>
-        </tr>
-
-        <tr>
-          <td colspan="2">Valor 4</td>
-          <td>Valor 6</td>
+      <tr>
+        <td>Valor 1</td>
+        <td>Valor 2</td>
+        <td>Valor 3</td>
       </tr>
-  </tbody>
-</table>
+
+      <tr>
+        <td colspan="2">Valor 4</td>
+        <td>Valor 6</td>
+      </tr>
+    </tbody>
+  </table>
 
   <a href="curso_html.html">⏫</a>
   <hr>
@@ -653,69 +660,73 @@ src="media/pdfcoffee.com_a-smarter-way-to-learn-javascript-pdf-free.pdf">
   <p>
     se utiliza la etiqueta <b>&lt;form&gt; &lt;/form&gt; </b> <br>
     dentro de los formularios podemos utilizar controles de canptura por parte de los usuarios<br>
-    los principales son cajas de texto, botones de radio, botones de comando, etc<b></br> 
+    los principales son cajas de texto, botones de radio, botones de comando, etc<b></br>
     </b>
   </p>
 
   <a href="curso_html.html">⏫</a>
   <hr>
   <h2 id="formularios-cajas-textos">Cajas de textos</h2>
-    Estos no permite capturar texto por parte de los usuarios, se utiliza la etiqueta <b>&lt;input&gt;</b><br>
-    se recomienda acompañarla con la etiqueta <b>&lt;label&gt;&lt;/label&gt;</b>, que contiene la <br>
-    descripcion de texto que le indica al usuario la informacion requerida.<br>
-    por ejemplo : <br>
-    <pre>
+  Estos no permite capturar texto por parte de los usuarios, se utiliza la etiqueta <b>&lt;input&gt;</b><br>
+  se recomienda acompañarla con la etiqueta <b>&lt;label&gt;&lt;/label&gt;</b>, que contiene la <br>
+  descripcion de texto que le indica al usuario la informacion requerida.<br>
+  por ejemplo : <br>
+  <pre>
       <code>
         &lt;form&gt;
           &lt;label&gt;Nombre del estudiante: &lt;/label&gt;
           &lt;input&gt; 
         &lt;/form&gt;
       </code>
-    </pre>  
-    y nos muestra el siguiente resultado <br>
-    <form>
-      <label for="nombEstudiante">Nombre del estudiante </label>
-      <input id="nombEstudiante">
-    </form>
+    </pre>
+  y nos muestra el siguiente resultado <br>
+  <form>
+    <label for="nombEstudiante">Nombre del estudiante </label>
+    <input id="nombEstudiante">
+  </form>
   <p>
     si queremos que la eliqueta <b>label</b> este asociada con la <b>caja de texto</b>, debemos colocarle a la <br>
-    caja de texto un <b>Id</b>, y a la etiqueta colocarle al atributo <b>for</b> el nombre del <b>id</b> de la caja de texto <br>
+    caja de texto un <b>Id</b>, y a la etiqueta colocarle al atributo <b>for</b> el nombre del <b>id</b> de la caja de
+    texto <br>
     por ejemplo le colocaremos a la caja de texto <b>nombEstudiante</b>, quedando de la siguient manera: <br>
-    si el usuario le da un click a la etiueta el foco salta a la caja de texto al que está asociado.<br> 
+    si el usuario le da un click a la etiueta el foco salta a la caja de texto al que está asociado.<br>
     Es muy importante colocar la propiedad <b>name</b> que es el nombre del objeto, en este caso el nombre de <br>
     la caja de texto <b>nombEstudiante</b>, es el nombre llave que es enviado cuando se envia el formulario y <bR>
-    el valor digitado es el valor enviado.<br> 
-    <pre>
+    el valor digitado es el valor enviado.<br>
+  <pre>
       <code>
         &lt;form&gt;
           &lt;label for="nombEstudiante"&gt;Nombre del estudiante: &lt;/label&gt;
           &lt;input id="nombEstudiante"&gt; name="nombEstudiante"
         &lt;/form&gt;
       </code>
-    </pre>  
+    </pre>
   </p>
   <p>
     tambien existe la propiedad <b>placeholder</b> que es paracida a la etiqueta, pero en mensaje aparece dentro <br>
     de la caja de texto. Ademas la propiedad <b>type</b> le indica a la caja de texto, como se va a comportar,<br>
     puede ser <b>text,button,checkbox, color, date, datetime, date-local, email, file, hiden, imagen, <br>
-    month, number,pasword, radio, submit, etc</b><br>
- 
+      month, number,pasword, radio, submit, etc</b><br>
+
   </p>
 
   <input type="file" multiple>
   <p>como puedes observar nos permite examinar las carpetas de nuestro dico para que escojamos cualquier archivo, <br>
-    pero si necesitamos escoger mas de uno tenemos que colocarle el atributo <b>multiple</b> quedando el codigo siguiente: <br>
-    <pre>
+    pero si necesitamos escoger mas de uno tenemos que colocarle el atributo <b>multiple</b> quedando el codigo
+    siguiente: <br>
+  <pre>
       <code>
         &lt;input type="file" multiple>
       </code>
     </pre>
   </p>
   <p>
-    los tipos <b>hiden</b> son campos ocultos, el usuario no los ve, pero se utilizan mucho en programacion, cuando se necesita <br>
-    trabajar con una variable que tome un valor segun una condicion y sea enviada por nuestro formulario sin ser entrada directa del usuario.
+    los tipos <b>hiden</b> son campos ocultos, el usuario no los ve, pero se utilizan mucho en programacion, cuando se
+    necesita <br>
+    trabajar con una variable que tome un valor segun una condicion y sea enviada por nuestro formulario sin ser entrada
+    directa del usuario.
   </p>
-  <input type ="number">
+  <input type="number">
   <br>
   <input type="search">
   <br>
@@ -745,10 +756,10 @@ src="media/pdfcoffee.com_a-smarter-way-to-learn-javascript-pdf-free.pdf">
 
   <a href="curso_html.html">⏫</a>
   <hr>
-  <h2 id="formularios-select">select</h2>
+  <h2 id="formulario-select">select</h2>
   <p>
     el control <b>select</b> como se muestra a continuacion<br>
-    <pre>
+  <pre>
       <code>
         &lt;select name="" id=""&gt;  
           &lt;option value="">html&lt;/option&gt;
@@ -773,7 +784,7 @@ src="media/pdfcoffee.com_a-smarter-way-to-learn-javascript-pdf-free.pdf">
     Si queremos que se pueda escoger mas de un opcion del listado igual que en el <b>input type file</b> <br>
     hay que utilizar el atributo <b>multiple</b> quedando el codigo de la siguiente manera, <br>
     el usuario para seleccinar varias opciones debe usar la techa <b>Ctrl + Clip en las opciones deseadas</b>
-    <pre>
+  <pre>
       <code>
         &lt;select name="" id="" multiple&gt; 
           &lt;option value="">html&lt;/option&gt;
@@ -806,9 +817,10 @@ src="media/pdfcoffee.com_a-smarter-way-to-learn-javascript-pdf-free.pdf">
   </div>
   <br>
   <article>
-  si tenemos un grupo de botones y queremos que se comporte como un grupo debemos colocarle a todos el mismo nombre <b>name</b>,<br>
-  como se muestra a continuacion ; <br>
-  <pre>
+    si tenemos un grupo de botones y queremos que se comporte como un grupo debemos colocarle a todos el mismo nombre
+    <b>name</b>,<br>
+    como se muestra a continuacion ; <br>
+    <pre>
     <code>
       &lt;div>Seleccione una de las siguientes opciones&lt;/div>
       &lt;div>
@@ -822,14 +834,13 @@ src="media/pdfcoffee.com_a-smarter-way-to-learn-javascript-pdf-free.pdf">
       &lt;/div>
     </code>
   </pre>
-</article>
+  </article>
   <h3>ejemplo de radio botones 2</h3>
   <fieldset>
     <legend>Select a maintenance drone:</legend>
 
     <div>
-      <input type="radio" id="huey" name="drone" value="huey"
-             checked>
+      <input type="radio" id="huey" name="drone" value="huey" checked>
       <label for="huey">Huey</label>
     </div>
 
@@ -842,12 +853,12 @@ src="media/pdfcoffee.com_a-smarter-way-to-learn-javascript-pdf-free.pdf">
       <input type="radio" id="louie" name="drone" value="louie">
       <label for="louie">Louie</label>
     </div>
-</fieldset>
+  </fieldset>
 
   <p>
     Ejemplo de una caja de texto de solo lectura, se coloca el atributo <b>readonly</b><br>
     si queremos que se vea un poco opaco se le coloca el otributo <b>disabled</b>
-    <pre>
+  <pre>
       <code>
         &lt;input type="text" value="Rodney Zapata" readonly disabled&gt;
       </code>
@@ -855,14 +866,15 @@ src="media/pdfcoffee.com_a-smarter-way-to-learn-javascript-pdf-free.pdf">
   </p>
   <input type="text" value="Rodney Zapata" readonly disabled><br>
   <p>
-    las cajas de texto se le puede colocar el atributo <b>pattern=" "</b>, donde usaremos <b>Expresiones regulares</b><br>
-    de JavaScript,  
+    las cajas de texto se le puede colocar el atributo <b>pattern=" "</b>, donde usaremos <b>Expresiones
+      regulares</b><br>
+    de JavaScript,
   </p>
   <input type="text" pattern="^[A-Za-z]+$" required title="Solo acepta letras">
 
   <a href="curso_html.html">⏫</a>
   <hr>
-  <h2 id="select, checkbox, radio ">select, checkbox, radio</h2>
+  <h2 id="formulario-input">select, checkbox, radio, fechas</h2>
   <form>
     <p>Elige un idioma</p>
     <select name="idioma" multiple="on">
@@ -878,31 +890,58 @@ src="media/pdfcoffee.com_a-smarter-way-to-learn-javascript-pdf-free.pdf">
     <input type="radio" name="lenguaje-Python" id="radio-python" value="python">
     <label for="radio-python">python</label>
     <input type="radio" name="lenguaje-React" id="radio-react" value="react">
-    <label for="radio-react">react</label>
+    <label for="radio-react">react</label> <br>
+    <label for="fecha">fecha</label>
+    <input type="date" name="fecha" id="fecha"> <br>
+    <label for="programando">Experiencia programando: </label>
+    <input type="number" name="experiencia" id="experiencia"> <br>
 
     <input type="submit">
     <input type="reset">
+
   </form>
   <p>
     note que utilizamos <b>Input Type="submit"</b> y <b>input type="reset"</b> y no estamos usando<br>
-    <b>button type="submit"</b> ni <b>button type="submit"</b>, porque esto era utilizado en navegadores viejos como internet Explore<br>
+    <b>button type="submit"</b> ni <b>button type="submit"</b>, porque esto era utilizado en navegadores viejos como
+    internet Explore<br>
     si dentro de las opciones colocamos el atributo <b>Seleted</b>, esta opcion aparecerá como predeterminado. <br>
-    en caso de un radio boton que solo se escoje verdadero o falso, osea: <b>on</b> o <b>off</b> y al llamar la url quedaria así: <br>
+    en caso de un radio boton que solo se escoje verdadero o falso, osea: <b>on</b> o <b>off</b> y al llamar la url
+    quedaria así: <br>
     en cambio en el leguaje si aparece el que se haya escogido: sp, en, fr que aparace en el atributo <b>value</b><br>
     http://127.0.0.1:5500/curso_html.html?idioma=en&lenguaje=on
   </p>
 
   <a href="curso_html.html">⏫</a>
   <hr>
-  <h2 id="formulario-de-contactos">formulario de contactos</h2>
+  <h2 id="formulario-contactos">formulario de contactos</h2>
   <form action="https://formsubmit.co/rodneyzapatapalacio@gmail.com" method="post">
-    <input type="text" placeholder="Escriba su nombre" name="nombre" pattern="^[A-Za-zÑñáéíóú\s]+$" title="solo aceptan letras y espacios"> <br>
-    <input type="email" placeholder="Escriba su correo" name="correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="solo formato de correo"><br>
+    <input type="text" placeholder="Escriba su nombre" name="nombre" pattern="^[A-Za-zÑñáéíóú\s]+$"
+      title="solo aceptan letras y espacios"> <br>
+    <input type="email" placeholder="Escriba su correo" name="correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+      title="solo formato de correo"><br>
     <textarea placeholder="Escriba una descripcion" rows="10" cols="30" required></textarea> <br>
     <input type="submit">
     <input type="reset">
   </form>
 
+  <pre>
+    <code>
+      &lt;form action="https://formsubmit.co/rodneyzapatapalacio@gmail.com" method="post">
+        &lt;input type="text" placeholder="Escriba su nombre" name="nombre" pattern="^[A-Za-zÑñáéíóú\s]+$"
+          title="solo aceptan letras y espacios"> <br>
+          &lt;input type="email" placeholder="Escriba su correo" name="correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+          title="solo formato de correo"><br>
+        &lt;textarea placeholder="Escriba una descripcion" rows="10" cols="30" required></textarea> <br>
+        &lt;input type="submit">
+        &lt;input type="reset">
+      &lt;/form>
+    &lt;/code>
+  </pre>
+  <article>
+    <strong>pattern</strong> nos restringe los caracteres soportador por ejemplo solo letras o letras y numero <br>
+    <strong>required</strong> establede que el campo en obligatorio no puede quedar en blanco <br>
+    <strong>placeholder</strong> nos muetra un mensaje predeterminado dentro del textbox br
+  </article>
   <a href="curso_html.html">⏫</a>
   <hr>
   <h2 id="data-atributos">data atributos</h2>
@@ -981,6 +1020,55 @@ src="media/pdfcoffee.com_a-smarter-way-to-learn-javascript-pdf-free.pdf">
   <p>Manejo de <strong>Margen</strong></p>
   <p></p>
 
+  <a href="curso_html.html">⏫</a>
+  <hr>
+  <h2 id="imagen-svg">Imagen SVG</h2>
+  <article>
+    son imagenes que no se pixeal por ser hecha con vectores por ejemplo: <br>
+    consultamos de la pagina <a href="https://www.svgrepo.com/">svgIcon</a><br>
+
+    <svg width="150px" height="150px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+      <g id="SVGRepo_iconCarrier">
+        <path
+          d="M512 960c-92.8 0-160-200-160-448S419.2 64 512 64s160 200 160 448-67.2 448-160 448z m0-32c65.6 0 128-185.6 128-416S577.6 96 512 96s-128 185.6-128 416 62.4 416 128 416z"
+          fill="#050D42"></path>
+        <path
+          d="M124.8 736c-48-80 92.8-238.4 307.2-363.2S852.8 208 899.2 288 806.4 526.4 592 651.2 171.2 816 124.8 736z m27.2-16c33.6 57.6 225.6 17.6 424-97.6S905.6 361.6 872 304 646.4 286.4 448 401.6 118.4 662.4 152 720z"
+          fill="#050D42"></path>
+        <path
+          d="M899.2 736c-46.4 80-254.4 38.4-467.2-84.8S76.8 368 124.8 288s254.4-38.4 467.2 84.8S947.2 656 899.2 736z m-27.2-16c33.6-57.6-97.6-203.2-296-318.4S184 246.4 152 304 249.6 507.2 448 622.4s392 155.2 424 97.6z"
+          fill="#050D42"></path>
+        <path
+          d="M512 592c-44.8 0-80-35.2-80-80s35.2-80 80-80 80 35.2 80 80-35.2 80-80 80zM272 312c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48zM416 880c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48z m448-432c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48z"
+          fill="#2F4BFF"></path>
+      </g>
+    </svg>
+    <pre>
+      <code>
+        <svg width="150px" height="150px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M512 960c-92.8 0-160-200-160-448S419.2 64 512 64s160 200 160 448-67.2 448-160 448z m0-32c65.6 0 128-185.6 128-416S577.6 96 512 96s-128 185.6-128 416 62.4 416 128 416z"
+              fill="#050D42"></path>
+            <path
+              d="M124.8 736c-48-80 92.8-238.4 307.2-363.2S852.8 208 899.2 288 806.4 526.4 592 651.2 171.2 816 124.8 736z m27.2-16c33.6 57.6 225.6 17.6 424-97.6S905.6 361.6 872 304 646.4 286.4 448 401.6 118.4 662.4 152 720z"
+              fill="#050D42"></path>
+            <path
+              d="M899.2 736c-46.4 80-254.4 38.4-467.2-84.8S76.8 368 124.8 288s254.4-38.4 467.2 84.8S947.2 656 899.2 736z m-27.2-16c33.6-57.6-97.6-203.2-296-318.4S184 246.4 152 304 249.6 507.2 448 622.4s392 155.2 424 97.6z"
+              fill="#050D42"></path>
+            <path
+              d="M512 592c-44.8 0-80-35.2-80-80s35.2-80 80-80 80 35.2 80 80-35.2 80-80 80zM272 312c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48zM416 880c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48z m448-432c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48z"
+              fill="#2F4BFF"></path>
+          </g>
+        </svg>
+    
+      </code>
+    </pre>
+  </article>
 </body>
 
 </html>
