@@ -1,0 +1,8 @@
+.tabla-combinadores{
+    border: 1px solid black;
+
+}
+
+.tabla-combinadores th, td{
+    border: 1px solid black;
+}

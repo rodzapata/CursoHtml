@@ -21,7 +21,9 @@
       <li><a href="#token-git">Token Git</a></li>
       <li><a href="#metodo-abreviado-code">Metodo abreviado en Code Studio </a></li>
       <li><a href="#selectores">selectores</a></li>
+      <li><a href="#combinadores">combinadores</a></li>
       <li><a href="#bordes">bordes</a></li>
+      <li><a href="#seudo-clase">seudo clase</a></li>
       <li><a href="#fondo">fondo</a></li>
       <li><a href="#color-enlace">color en los enlaces</a></li>
       <li><a href="#listas">estilos en las listas</a></li>
@@ -204,13 +206,63 @@
       <span>Span 3.</span>
 
       Para los colores lo mas recomendable es usar RGB() y dejar de utilizar exadecimal. <br>
-      
+
+    </article>
+
+    <a href="curso-css.html">⏫</a>
+    <hr>
+    <article id="combinadores">
+      <h2>Combinadores</h2>
+      Es un simbolo que nos permite combinar dos o mas selectores CSS : <br>
+      <table class="tabla-combinadores">
+        <thead>
+          <tr>
+            <th>simbolo</th>
+            <th>Nombre del commbinador</th>
+            <th>ejemplo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>(espacio)</td>
+            <td>Combinador descendiente</td>
+            <td>#page div { }</td>
+          </tr>
+          <tr>
+            <td>></td>
+            <td>Combinador Hijo</td>
+            <td>#page > div { }</td>
+          </tr>
+          <tr>
+            <td>+</td>
+            <td>hermano adyacente</td>
+            <td>div + div { }</td>
+          </tr>
+          <tr>
+            <td>~</td>
+            <td>hermano general</td>
+            <td>div ~ div { }</td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>universal</td>
+            <td>#page * { }</td>
+          </tr>
+  
+        </tbody>
+        <tfoot>
+  
+        </tfoot>
+      </table>
+  
+
+
     </article>
 
     <a href="curso-css.html">⏫</a>
     <hr>
     <h2>Bordes (estilos)</h2>
-    <article id="bodes">
+    <article id="bordes">
       Es el recuardo o cuadro que embarca un objeto, existen diferentes estilos como son: <br>
       <b>none, double,groove, dotted, inset, solid, dashed</b><br>
       donde <b>none</b> es sin bordes, <br>
@@ -266,6 +318,53 @@
         }
       </pre>
 
+      Existe uan diferencias entre borde y contorno. <br>
+      Cuando es borde se aprecia un brinco porque al colocar el border modifica el ancho interno, pero con el contorno
+      esto no sucede y se usa <strong>outline</strong>, en los borders se puede especificar varios atributos al tiempo
+      como por ejemplo: <br>
+      <h3 id="borde-abreviado">ejemplo de bordes abreviado varios atributos al tiempo, colo</h3>
+
+      <pre>
+        Codigo HTMl:
+        &lt;h3 id="borde-abreviado">ejemplo de bordes abreviado varios atributos al tiempo, color&lt;/h3>
+
+        codigo CSS:
+        #borde-abreviado{
+          border: 10px solid red
+        }
+      </pre>
+
+    </article>
+
+    <a href="curso-css.html">⏫</a>
+    <hr>
+    <h2>seudo Clases</h2>
+    <article id="seudo-clase">
+      es cuando a un selector se le agrega un estado especial y esta separado con dos punto <strong>:</strong> <br>
+      <pre>
+        .link:hover{
+            background-color:red
+        }
+      </pre>
+      Esto se acciona cuando pasamos el mouse por el link
+      <pre>
+        .link:active{
+          background-color:yelow
+        }
+      </pre>
+      Esto cuano estao del objeto se activa.
+      <pre>
+        .link:first-child{
+          color: blue
+        }
+      </pre>
+      primer elemento del link
+      <pre>
+        .link:last-child{
+          color: blue
+        }
+      </pre>
+      ultimo elemento del link
     </article>
 
     <a href="curso-css.html">⏫</a>

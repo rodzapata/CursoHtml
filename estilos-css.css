@@ -53,6 +53,9 @@ div > span {
     border-radius:5px ;
     border-width: 5px;
 }
+#borde-abreviado{
+    border: 10px solid red
+  }
 
 #fondo-color{
     background-color: rgb(69, 173, 173);
