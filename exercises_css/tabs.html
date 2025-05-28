@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabs con CSS</title>
+    <link rel="stylesheet" href="tabs.css">
+  <style>
+  </style>
+</head>
+<body>
+
+  <div class="tabs">
+    <!-- Radio buttons -->
+    <input type="radio" name="tabs" id="tab1" checked>
+    <input type="radio" name="tabs" id="tab2">
+    <input type="radio" name="tabs" id="tab3">
+
+    <!-- Labels para pestañas -->
+    <div class="tab-labels">
+      <label for="tab1" class="tab-label">Inicio</label>
+      <label for="tab2" class="tab-label">Servicios</label>
+      <label for="tab3" class="tab-label">Contacto</label>
+    </div>
+
+    <!-- Contenido de pestañas -->
+    <div class="content">
+      <div class="tab-content" id="content1">
+        <h2>Bienvenido</h2>
+        <p>Este es el contenido de la pestaña de Inicio.</p>
+      </div>
+      <div class="tab-content" id="content2">
+        <h2>Nuestros Servicios</h2>
+        <p>Aquí describimos lo que ofrecemos.</p>
+      </div>
+      <div class="tab-content" id="content3">
+        <h2>Contáctanos</h2>
+        <p>Formulario y medios de contacto.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+  .tabs {
+    max-width: 600px;
+    margin: auto;
+  }
+
+  /* Oculta los radios */
+  .tabs input[type="radio"] {
+    display: none;
+  }
+
+  .tab-labels {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .tab-label {
+    flex: 1;
+    padding: 10px;
+    background: #eee;
+    border: 1px solid #ccc;
+    text-align: center;
+    transition: background 0.3s;
+  }
+
+  .tab-label:hover {
+    background: #ddd;
+  }
+
+  .tab-content {
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 15px;
+    display: none; 
+  }
+
+  /* Mostrar contenido cuando está seleccionado */
+
+  #tab1:checked ~ .content #content1,
+  #tab2:checked ~ .content #content2,
+  #tab3:checked ~ .content #content3 {
+    display: block;
+  }
+
+  /* Estilo para la pestaña activa */
+  #tab1:checked ~ .tab-labels label[for="tab1"],
+  #tab2:checked ~ .tab-labels label[for="tab2"],
+  #tab3:checked ~ .tab-labels label[for="tab3"] {
+    background: #fff;
+    border-bottom: 1px solid #fff;
+  }
