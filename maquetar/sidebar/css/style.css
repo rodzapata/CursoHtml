@@ -1,0 +1,23 @@
+body{
+    background-color: grey;
+    margin:0;
+}
+
+.app-layout{
+    background-color: aqua;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.app-layout{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    height: 100vh;
+}
+
+.sidebar{
+    background-color: #f4f4f4;
+}
+.content{
+    background-color: bisque;
+}

@@ -1,0 +1,22 @@
+/* Estilos básicos para que se vea bien */
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+.main-header {
+  background-color: #003366;
+  color: white;
+  padding: 1rem;
+}
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+/* --- La Magia de Flexbox --- */
+.main-header {
+  display: flex; /* 1. Activamos Flexbox */
+  justify-content: space-between; /* 2. Separa los elementos al máximo */
+  align-items: center; /* 3. Los centra verticalmente */
+}
