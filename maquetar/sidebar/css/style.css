@@ -1,23 +1,83 @@
-body{
-    background-color: grey;
-    margin:0;
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
-.app-layout{
-    background-color: aqua;
-    border: 1px solid #ccc;
-    padding: 1rem;
+/* Sidebar general */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
-.app-layout{
-    display: grid;
-    grid-template-columns: 25% 75%;
-    height: 100vh;
+/* Encabezado */
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar-header h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.sidebar-header button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
-.sidebar{
-    background-color: #f4f4f4;
+/* Acordeón */
+.accordion-header {
+  background: none;
+  border: none;
+  text-align: left;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem 0;
 }
-.content{
-    background-color: bisque;
+
+.accordion-content {
+  display: none;
+  flex-direction: column;
+  padding-left: 0.5rem;
+}
+
+.accordion-content a {
+  font-size: 13px;
+  color: inherit;
+  text-decoration: none;
+  padding: 0.3rem 0;
+  border-radius: 4px;
+}
+
+.accordion-content a:hover {
+  background: var(--hover-bg);
+}
+
+/* Tema claro */
+.light-theme {
+  --bg-color: #f8f9fa;
+  --text-color: #212529;
+  --hover-bg: #e9ecef;
+}
+
+.light-theme .sidebar {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Tema oscuro */
+.dark-theme {
+  --bg-color: #1f2937;
+  --text-color: #f1f5f9;
+  --hover-bg: #374151;
+}
+
+.dark-theme .sidebar {
+  background: var(--bg-color);
+  color: var(--text-color);
 }
